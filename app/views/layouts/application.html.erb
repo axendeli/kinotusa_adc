@@ -3,12 +3,19 @@
   <head>
     <title>Kinotusovka</title>
     <%= csrf_meta_tags %>
-    <p>jmnnnnhn</p>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
+
+  <header>
+    <div class="logo">lagos</div>
+    <%= link_to "About", about_path %>
+    <div class="">создать мероприятие</div>
+    <div class="">войти</div>
+    <div class="">зарегистрироваться</div>
+  </header>
 
   <body>
     <%= yield %>
