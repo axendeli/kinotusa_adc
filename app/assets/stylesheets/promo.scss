@@ -17,10 +17,10 @@ header {
   gap: 0px 0px;
   grid-template-areas:
     "first_section_headings first_section_headings first_section_headings first_section_headings first_section_headings first_section_headings first_section_headings first_section_headings"
-    "ivent_card ivent_card ivent_card_second ivent_card_second . . . ."
-    "ivent_card ivent_card ivent_card_second ivent_card_second . . . ."
-    "ivent_card ivent_card ivent_card_second ivent_card_second . . . ."
-    "ivent_card ivent_card ivent_card_second ivent_card_second subscribe_input subscribe_input subscribe_input subscribe_input";
+    "event_card event_card event_card_second event_card_second . . . ."
+    "event_card event_card event_card_second event_card_second . . . ."
+    "event_card event_card event_card_second event_card_second . . . ."
+    "event_card event_card event_card_second event_card_second subscribe_input subscribe_input subscribe_input subscribe_input";
   margin-top: 40px;
 }
 
@@ -33,11 +33,11 @@ header {
    flex-direction: row;
    border-bottom: 5px solid white;
 }
-.ivent_card {
-   grid-area: ivent_card;
+.event_card {
+   grid-area: event_card;
 }
-.ivent_card_second {
-  grid-area: ivent_card_second;
+.event_card_second {
+  grid-area: event_card_second;
 }
 .subscribe_input {
   grid-area: subscribe_input;
@@ -56,8 +56,8 @@ section.create_event {
   border: 5px solid white;
   margin-bottom: 40px;
 }
-.ivent_card,
-.ivent_card_second {
+.event_card,
+.event_card_second {
   h3 {
    font-family: 'NEXT ART';
    font-weight: bold;
@@ -69,8 +69,8 @@ section.create_event {
      border-left: 5px solid white;
   }
 }
-.ivent_card,
-.ivent_card_second {
+.event_card,
+.event_card_second {
    h3,
   .date,
   .time,
@@ -80,15 +80,73 @@ section.create_event {
     padding: 16px;
   }
 }
-.ivent_card_second {
+.event_card_second {
   margin-top: auto;
   border-top: 5px solid white;
 }
-.ivent_card_second .organizator {
+.event_card_second .organizator {
   border-bottom: none;
 }
 .date_and_time {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
+}
+.time,
+.date {
+  flex: 1;
+}
+.event_card,
+.event_card_second {
+  border-right: 5px solid white;
+  display: flex;
+  flex-direction: column;
+}
+.subscribe_input {
+  padding-left: 40px;
+}
+
+
+.find_event {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr;
+  grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "find_event_h1_and_description find_event_h1_and_description find_event_h1_and_description find_event_h1_and_description find_event_h1_and_description event_page_photo event_page_photo event_page_photo event_page_photo event_page_photo"
+    "find_event_h1_and_description find_event_h1_and_description find_event_h1_and_description find_event_h1_and_description find_event_h1_and_description event_page_photo event_page_photo event_page_photo event_page_photo event_page_photo"
+    "find_event_h1_and_description find_event_h1_and_description find_event_h1_and_description find_event_h1_and_description find_event_h1_and_description event_page_photo event_page_photo event_page_photo event_page_photo event_page_photo"
+    "find_event_h1_and_description find_event_h1_and_description find_event_h1_and_description find_event_h1_and_description find_event_h1_and_description find_event_heading find_event_heading find_event_heading find_event_actions find_event_actions"
+    "find_event_h1_and_description find_event_h1_and_description find_event_h1_and_description find_event_h1_and_description find_event_h1_and_description find_event_description find_event_description find_event_description find_event_date_time_place find_event_date_time_place";
+}
+
+.event_page_photo { grid-area: event_page_photo; }
+
+.find_event_heading { grid-area: find_event_heading; }
+
+.find_event_actions { grid-area: find_event_actions; }
+
+.find_event_description {
+  grid-area: find_event_description;
+}
+
+.find_event_date_time_place {
+  grid-area: find_event_date_time_place;
+}
+
+.find_event_h1_and_description {
+  grid-area: find_event_h1_and_description;
+}
+
+
+.event_page_photo img {
+  width: 100%;
+}
+
+.find_event_heading {
+  font-size: 28px;
+  font-family: 'NEXT ART';
+  font-weight: bold;
+  letter-spacing: 0.03em;
+  line-height: 120%;
 }
