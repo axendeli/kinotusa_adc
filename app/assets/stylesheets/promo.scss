@@ -14,3 +14,47 @@ h2 {
   font-family: 'Next Art';
   font-weight: bold;
 }
+
+.first_screen_promo {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr;
+  grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "first_section_headings first_section_headings first_section_headings first_section_headings first_section_headings first_section_headings first_section_headings first_section_headings"
+    "ivent_card ivent_card ivent_card_second ivent_card_second . . . ."
+    "ivent_card ivent_card ivent_card_second ivent_card_second . . . ."
+    "ivent_card ivent_card ivent_card_second ivent_card_second . . . ."
+    "ivent_card ivent_card ivent_card_second ivent_card_second subscribe_input subscribe_input subscribe_input subscribe_input";
+  margin-top: 50px;
+}
+
+.first_section_headings {
+   grid-area: first_section_headings;
+   padding: 20px 20px;
+}
+.ivent_card {
+   grid-area: ivent_card;
+}
+.ivent_card_second {
+  grid-area: ivent_card_second;
+}
+.subscribe_input {
+  grid-area: subscribe_input;
+}
+
+
+.sections_wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+}
+section.first_screen_promo,
+section.find_event,
+section.create_event {
+  height: 90vh;
+  width: 100%;
+  border: 5px solid white;
+  margin-bottom: 40px;
+}
