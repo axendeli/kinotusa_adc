@@ -11,14 +11,54 @@
 
   <header>
     <div class="logo">lagos</div>
-    <%= link_to "About", about_path %>
-    <div class="btn_primary">создать мероприятие</div>
-    <div class="">войти</div>
-    <div class="separator"></div>
-    <div class="">зарегистрироваться</div>
+    <div class="header_actions">
+      <%= link_to "о  поекте", about_path %>
+      <div class="btn_primary">создать&nbsp;мероприятие</div>
+      <div class="">войти</div>
+      <div class="serarator_wrapper">
+         <div class="separator"></div>
+      </div>
+      <div class="">зарегистрироваться</div>
+    </div>
   </header>
 
   <body>
-    <%= yield %>
+
+
+    <section class="first">
+      <div class="first_section_headings">
+        <h2>кино мероприятия</h2>
+        <span>
+          Найди мероприятие<br>или создай своё
+        </span>
+      </div>
+      <div class="">
+
+      </div>
+      <%= yield %>
+    </section>
+
+    <section class="find_event">
+      <div class="">
+        <h2>не пропусти интересную тусовку</h2>
+      </div>
+      <div class="">
+
+      </div>
+    </section>
+
+    <section class="">
+      <div class="">
+        <h2></h2>
+      </div>
+      <div class="">
+
+      </div>
+    </section>
+
   </body>
 </html>
+
+<% if notice %>
+  <%= notice %>
+<% end %>

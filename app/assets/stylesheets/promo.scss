@@ -3,14 +3,14 @@
 // You can use Sass (SCSS) here: https://sass-lang.com/
 body {
   background: #111111;
+  color: white;
 }
 header {
   color: white;
   border-bottom: solid white 5px;
 }
-
-header .btn_primary {
-  border: 3px solid white;
-  border-radius: 20px;
-  padding: 6px 8px;
+h2 {
+  font-size: 90px;
+  font-family: 'Next Art';
+  font-weight: bold;
 }

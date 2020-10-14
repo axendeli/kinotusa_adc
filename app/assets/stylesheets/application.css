@@ -26,14 +26,11 @@
        url('../fonts/pt-mono-v8-latin_cyrillic-regular.ttf') format('truetype'), /* Safari, Android, iOS */
        url('../fonts/pt-mono-v8-latin_cyrillic-regular.svg#PTMono') format('svg'); /* Legacy iOS */
 }
-
-
 @font-face {
   font-family: 'PT Mono';
 	src: url('ptm55f_w.eot');
 	src: local('PT Mono'), url('ptm55f_w.eot?#iefix') format('embedded-opentype'),url('ptm55f_w.woff') format('woff'),url('ptf55m_w.ttf') format('truetype'), url('ptm55f_w.svg#PTMono-Regular') format('svg');
 }
-
 @font-face {
   font-family: 'PT Mono';
 	src: url('ptm75f_w.eot');
@@ -48,6 +45,14 @@ body {
   font-family: "PT Mono";
 }
 
+a {
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
+
 header {
   width: 100%;
   height: 4vw;
@@ -57,14 +62,45 @@ header {
   display: flex;
   align-items: center;
   flex-direction: row;
+  justify-content: space-between;
   background-color: #111111;
   color: white;
   align-items: center;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
 }
 
-.separator {
-  height: 5px;
-  width: 145px;
+header .header_actions {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding-right: 8%;
+}
+.header_actions div:not(:last-child),
+.header_actions a {
+  margin-right: 3%;
+}
+header a {
+  white-space: nowrap;
+}
+.logo {
+  padding-left: 8%;
+}
+.header_actions div.separator {
+  margin: 0 1%;
+  height: 3px;
+  width: 2em;
+  background-color: white;
+  transform: rotate(-45deg);
+  margin-right: 0;
+}
+header .btn_primary {
+  border: 3px solid white;
+  border-radius: 20px;
+  padding: 6px 8px 2px;
+}
+h2 {
+  font-family: 'Next Art';
 }
 
 
