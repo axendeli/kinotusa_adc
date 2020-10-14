@@ -100,7 +100,21 @@ header .btn_primary {
   padding: 6px 8px 2px;
 }
 h2 {
+  font-size: 90px;
+  line-height: 100%;
   font-family: 'Next Art';
+  font-weight: regular;
+}
+
+.ivent_card,
+.ivent_card_second {
+  border-right: 5px solid white;
+  display: flex;
+  flex-direction: column;
+}
+
+.subscribe_input {
+  padding-left: 40px;
 }
 
 
