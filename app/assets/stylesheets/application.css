@@ -106,6 +106,16 @@ h2 {
   font-family: 'Next Art';
   font-weight: regular;
 }
+footer {
+  width: 100%;
+  border-top: var(--bold-border);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.contact_us {
+    padding-left: 5%;
+}
 
 
 
