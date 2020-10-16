@@ -39,6 +39,10 @@
 	src: local('PT Mono Bold'), url('ptm75f_w.eot?#iefix') format('embedded-opentype'), url('ptm75f_w.woff') format('woff'),url('ptm75f_w.ttf') format('truetype'), url('ptm75f_w.svg#PTMono-Bold') format('svg');
 }
 
+:root {
+  --bold-border: 5px solid white;
+}
+
 body {
   font-family: "PT Mono";
 }
@@ -95,26 +99,13 @@ header .btn_primary {
   border-radius: 20px;
   padding: 6px 8px 2px;
 }
+
 h2 {
-  font-size: 90px;
+  font-size: 84px;
   line-height: 100%;
   font-family: 'Next Art';
   font-weight: regular;
 }
-
-
-.create_event {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  gap: 0px 0px;
-  grid-template-areas:
-    "event_creation_illustration event_creation_heading_and_description";
-}
-
-.event_creation_illustration { grid-area: event_creation_illustration; }
-
-.event_creation_heading_and_description { grid-area: event_creation_heading_and_description; }
 
 
 
