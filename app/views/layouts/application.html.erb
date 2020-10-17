@@ -7,7 +7,13 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <% if notice %>
+      <%= notice %>
+    <% end %>
+    
   </head>
+
 
   <header>
     <div class="logo">lagos</div>
@@ -147,7 +153,3 @@
      </footer>
   </body>
 </html>
-
-<% if notice %>
-  <%= notice %>
-<% end %>
