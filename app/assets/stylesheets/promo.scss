@@ -47,7 +47,40 @@ header {
 }
 .subscribe_input {
   grid-area: subscribe_input;
-  font-weight: regular;
+}
+span.subscribe_lable {
+  margin-left: 260px;
+  margin-bottom: 20px;
+}
+input#subscriber_email {
+  height: 100px;
+  width: 80%;
+  padding-left: 20px;
+  border-radius: 0;
+  border: none;
+  position: relative;
+  font-family: 'PT Mono';
+  font-size: 20px;
+}
+input[type="submit"] {
+  background: none;
+  border: none;
+}
+form#new_subscriber {
+  width: 100%;
+  border-top: var(--bold-border);
+  margin-top: 20px;
+}
+.new_subscriber {
+  position: relative;
+}
+.new_subscriber::before {
+  content: url("arrow_inp.svg");
+  position: absolute;
+  height: 30px;
+  width: 50px;
+  left: 560px;
+  top: 12px;
 }
 .sections_wrapper {
   display: flex;
@@ -84,7 +117,7 @@ section.create_event {
   .place,
   .organizator {
     border-bottom: 5px solid white;
-    padding: 16px;
+    padding: 12px;
   }
 }
 .empty {
@@ -110,9 +143,6 @@ section.create_event {
   border-right: 5px solid white;
   display: flex;
   flex-direction: column;
-}
-.subscribe_input {
-  padding-left: 40px;
 }
 .find_event {
   display: grid;
@@ -176,13 +206,15 @@ section.create_event {
   height: 80px;
   padding: 20px 0 0 20px;
 }
-.find_event_h1_and_description span {
-  padding-left: 20px;
-  padding-bottom: 40px;
-}
+.find_event_h1_and_description span,
 .event_creation_heading_and_description span {
   padding-left: 20px;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
+  font-size: 20px;
+  line-height: 120%;
+}
+.event_creation_heading_and_description span {
+  padding-left: 0;
 }
 .find_event_heading,
 .find_event_description {
@@ -219,7 +251,7 @@ section.create_event {
   grid-area: event_creation_illustration;
   border-right: var(--bold-border);
   position: relative;
-  max-width: 95%;
+  max-width: 100%;
 }
 .event_creation_heading_and_description {
   grid-area: event_creation_heading_and_description;
