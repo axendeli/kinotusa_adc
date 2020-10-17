@@ -47,6 +47,7 @@ header {
 }
 .subscribe_input {
   grid-area: subscribe_input;
+  font-weight: regular;
 }
 .sections_wrapper {
   display: flex;
@@ -141,8 +142,9 @@ section.create_event {
   grid-area: find_event_description;
   padding: 20px;
   font-weight: regular;
+  margin-top: -40px;
 }
-.find_event_heading,
+
 .find_event_actions,
 .find_event_date_time_place,
 .find_event h2 {
@@ -151,6 +153,7 @@ section.create_event {
 .find_event_date_time_place {
   grid-area: find_event_date_time_place;
   padding: 20px 0 0 20px;
+    margin-top: -40px;
 }
 .find_event_h1_and_description {
   grid-area: find_event_h1_and_description;
@@ -170,6 +173,8 @@ section.create_event {
   letter-spacing: 0.03em;
   line-height: 120%;
   border-bottom: var(--bold-border);
+  height: 80px;
+  padding: 20px 0 0 20px;
 }
 .find_event_h1_and_description span {
   padding-left: 20px;
@@ -198,7 +203,8 @@ section.create_event {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 20px 0 0 20px;
+  padding: 20px;
+  height: 60px;
   border-bottom: var(--bold-border);
 }
 .create_event {
@@ -213,7 +219,7 @@ section.create_event {
   grid-area: event_creation_illustration;
   border-right: var(--bold-border);
   position: relative;
-
+  max-width: 95%;
 }
 .event_creation_heading_and_description {
   grid-area: event_creation_heading_and_description;
@@ -228,23 +234,49 @@ section.create_event {
 .event_page_date_and_time {
   padding-top: 16px;
 }
+.event_page_date_and_time {
+  padding-top: 16px;
+}
 .find_event {
   .place span,
   .date span {
-    padding-left: 12px;
+    padding-left: 8px;
   }
 }
-.steps {
+.steps_img {
   margin: 0 auto;
-  padding-top: 32px;
+  padding-top: 60px;
+  display: flex;
+  justify-content: center;
+  transform: scale(0.9);
+}
+.crop_img {
+  padding: 48px 20px 20px 72px;
 }
 .downloaded_img {
   left: 60px;
   position: absolute;
-  top: 100px;
+  top: 140px;
   z-index: -1;
+}
+.input_date {
+  padding-top: 48px;
+  transform: scale(0.9);
 }
 .name_and_geners_wrapper,
 .date_and_img_wrapper {
   display: flex;
+}
+.date_and_img_wrapper {
+  padding-top: 40px;
+}
+.input_name {
+  transform: scale(0.8);
+  padding-top: 40px;
+}
+.name_and_geners_wrapper {
+  padding: 20px 20px 0 40px;
+}
+.event_page_date_and_time .date {
+  padding-left: 12px;
 }
