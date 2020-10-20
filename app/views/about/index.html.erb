@@ -1,1 +1,83 @@
-<h1>About#index</h1>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Kinotusovka</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <% if notice %>
+      <%= notice %>
+    <% end %>
+  </head>
+
+  <header>
+    <div class="logo">Киночество</div>
+    <div class="header_actions">
+      <%= link_to "о  поекте", about_path %>
+      <div class="btn_primary">создать&nbsp;мероприятие</div>
+      <div class="">войти</div>
+      <div class="serarator_wrapper">
+         <div class="separator"></div>
+      </div>
+      <div class="">зарегистрироваться</div>
+    </div>
+  </header>
+
+  <body>
+    <div class="sections_wrapper">
+      <section class="first_screen_about">
+        <div class="section_heading">
+          <h2>О проекте</h2>
+        </div>
+        <div class="about_us">
+          <%= image_tag("arrow.svg") %>
+          <p>Наш сервис создан для тех любителей и истинных фанатов кино. Благодаря сервису люди смогут запросто собраться в большую группу, найти единомышленников и помочь друг другу рассказать другим о мире кино.<br>Сервис станет удобным инсртрументом как для опытных организаторов кинотусовок, так и для тех кто только собирается собрать свою первую сходку по любимому жанру.</p>
+        </div>
+
+        <section class="second_screen_trouble">
+          <div class="section_heading">
+            <h2>Проблема</h2>
+            <h2>Решение</h2>
+          </div>
+          <div class="about_problem">
+            <%= image_tag("arrow.svg") %>
+            <p>Людям, которые любят кино и хотят находить больше единомышленников приходится производить поиски компании в беседах и группах соцсетей, что не всегда бывает удобным. Так же не у всех получается в принципе найти то или иное комьюнити, чтобы больше узнать о любимом жанре.</p>
+            <p>Благодаря сервису образуется абсолютно новое кино-комьюнити, которое поможет все большему количеству людей находить компанию
+            и узнавать что-то новое о любимых жанрах.</p>
+          </div>
+
+          <section class="trird_screen_audience">
+            <%= image_tag("arrow.svg") %>
+            <p>В ЦА входят как простые зрители, так и те, кто давно занимается организацией киновечеринок. Сервис доступен к пользованию кем угодно.</p>
+
+            <div class="person_card">
+              <div class="card_name">Диана</div>
+              <div class="card_age">20</div>
+              <div class="first_fact">любит корейский арт-хаус</div>
+              <div class="second_fact">ходит на локальные кино-тусовки</div>
+              <div class="third_fact">хочет чтобы больше людей могли узнать об этом жанре</div>
+            </div>
+
+          </section>
+
+    </div>
+
+    <footer>
+      <div class="contact_us">
+        <span>По любым вопросам</span>
+        <div class="social">
+          <%= image_tag("vk.svg") %>
+          <%= image_tag("inst.svg") %>
+          <%= image_tag("fb.svg") %>
+          <%= image_tag("tg.svg") %>
+        </div>
+      </div>
+      <span class="service_name">
+        Our service name 2020
+      </span>
+    </footer>
+  </body>
+</html>
