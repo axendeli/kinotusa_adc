@@ -83,6 +83,9 @@ header a {
   white-space: nowrap;
 }
 .logo {
+  font-family: 'Next Art';
+  font-weight: bold;
+  font-size: 24px;
   padding-left: 5%;
 }
 .header_actions div.separator {
