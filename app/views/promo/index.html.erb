@@ -1,6 +1,4 @@
     <%= stylesheet_link_tag 'promo', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <span class="subscribe_lable">Подпишись, чтобы не пропустить релиз проекта</span>
-    <%= render "subscribers/form" %>
 
 
     <!DOCTYPE html>
@@ -56,7 +54,6 @@
 
              <div class="event_card_second">
                <div class="empty">
-
                </div>
                <%= image_tag("infinity.jpg") %>
                <h3>Киноночь.<br>«О бесконечности»</h3>
@@ -69,6 +66,8 @@
              </div>
 
              <div class="subscribe_input">
+               <span class="subscribe_lable">Подпишись, чтобы не пропустить релиз проекта</span>
+               <%= render "subscribers/form" %>
                <%= yield %>
              </div>
            </section>
