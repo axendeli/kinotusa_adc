@@ -1,3 +1,161 @@
     <%= stylesheet_link_tag 'promo', media: 'all', 'data-turbolinks-track': 'reload' %>
     <span class="subscribe_lable">Подпишись, чтобы не пропустить релиз проекта</span>
     <%= render "subscribers/form" %>
+
+
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <title>Kinotusovka</title>
+        <%= csrf_meta_tags %>
+        <%= csp_meta_tag %>
+
+        <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+        <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+        <% if notice %>
+          <%= notice %>
+        <% end %>
+      </head>
+
+      <body>
+
+        <header>
+          <div class="logo">Киночество</div>
+          <div class="header_actions">
+            <%= link_to "о  поекте", about_path %>
+            <div class="btn_primary">создать&nbsp;мероприятие</div>
+            <div class="">войти</div>
+            <div class="serarator_wrapper">
+               <div class="separator"></div>
+            </div>
+            <div class="">зарегистрироваться</div>
+          </div>
+        </header>
+
+
+         <div class="sections_wrapper">
+
+           <section class="first_screen_promo">
+             <div class="first_section_headings">
+               <h2>кино мероприятия</h2>
+               <span>
+                 Найди мероприятие<br>или создай своё
+               </span>
+             </div>
+             <div class="event_card">
+               <%= image_tag("blue_velvet.jpg") %>
+               <h3>Киновечер Линча<br>с дискуссией</h3>
+               <div class="date_and_time">
+                 <span class="date">Сб, 10 сен.</span>
+                 <span class="time">19:00 - 23:00</span>
+               </div>
+               <span class="place">Сухаревская, 21/3</span>
+               <span class="organizator">Киноклуб ANTE</span>
+             </div>
+
+             <div class="event_card_second">
+               <div class="empty">
+
+               </div>
+               <%= image_tag("infinity.jpg") %>
+               <h3>Киноночь.<br>«О бесконечности»</h3>
+               <div class="date_and_time">
+                 <span class="date">Сб, 10 сен.</span>
+                 <span class="time">21:00 - 01:00</span>
+               </div>
+               <span class="place">Малая Ленинградская, 13/2</span>
+               <span class="organizator">State Bar</span>
+             </div>
+
+             <div class="subscribe_input">
+               <%= yield %>
+             </div>
+           </section>
+
+           <section class="find_event">
+              <div class="event_page_photo">
+                <%= image_tag("korean.jpg") %>
+              </div>
+              <div class="find_event_heading">Документальное кино в Азии</div>
+              <div class="find_event_actions">
+                <%= image_tag("share.svg") %>
+                <%= image_tag("save.svg") %>
+                <div class="btn_primary">я пойду</div>
+              </div>
+              <div class="find_event_description">
+                Значимость этих проблем настолько очевидна, что реализация намеченных плановых заданий играет важную роль в&nbsp;этом формировании форм развития. Разновидность тоталитаризма, согласно традиционным представлениям.
+              </div>
+
+              <div class="find_event_date_time_place">
+
+                <div class="place">
+                    <%= image_tag("map.svg") %>
+                    <span>Кузнечный пер. 3/5, Москва</span>
+                </div>
+                <div class="event_page_date_and_time">
+                    <%= image_tag("calendar.svg") %>
+                    <span class="date">05.11</span>
+                    <span>22-00</span>
+                </div>
+              </div>
+              <div class="find_event_h1_and_description">
+                 <h2>не пропусти интересную тусовку</h2>
+                 <span>Удобный поиск мероприятий и ничего лишнего</span>
+              </div>
+
+           </section>
+
+           <section class="create_event">
+
+             <div class="event_creation_illustration">
+               <div class="steps_img">
+                 <%= image_tag("steps.svg") %>
+               </div>
+               <div class="date_and_img_wrapper">
+                 <div class="crop_img">
+                   <%= image_tag("img_crop.svg") %>
+                 </div>
+                 <div class="downloaded_img">
+                   <%= image_tag("crop_img.jpg") %>
+                 </div>
+                  <div class="input_date">
+                    <%= image_tag("date.svg") %>
+                  </div>
+               </div>
+
+                <div class="name_and_geners_wrapper">
+                  <div class="input_name">
+                      <%= image_tag("name_inp.svg") %>
+                  </div>
+                  <div class="geners_img">
+                    <%= image_tag("geners.svg") %>
+                  </div>
+                </div>
+              </div>
+
+             <div class="event_creation_heading_and_description">
+               <h2>создай своё мероприятие</h2>
+               <span>Ты можешь бстро создать мероприятие<br>или проверить интерес аудитории</span>
+             </div>
+           </section>
+         </div>
+
+         <footer>
+           <div class="contact_us">
+             <span>По любым вопросам</span>
+             <div class="social">
+               <%= image_tag("vk.svg") %>
+               <%= image_tag("inst.svg") %>
+               <%= image_tag("fb.svg") %>
+               <%= image_tag("tg.svg") %>
+             </div>
+           </div>
+           <span class="service_name">
+             Our service name 2020
+           </span>
+         </footer>
+
+        </body>
+
+    </html>
