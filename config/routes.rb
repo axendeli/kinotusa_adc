@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   get 'promo/index'
 
   get 'posts/index'
-  root 'posts#index'
+  root 'promo#index'
 
   get 'promo', to: 'promo#index'
   get 'about', to: 'about#index'
