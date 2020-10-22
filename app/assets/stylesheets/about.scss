@@ -19,7 +19,7 @@ header {
   background-color: white!important;
 }
 
-.first_screen_promo {
+.first_screen_about {
   display: grid;
   grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr;
   grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
@@ -56,12 +56,12 @@ header {
   top: 263px;
 }
 
-.event_card {
-   grid-area: event_card;
-}
-.event_card_second {
-  grid-area: event_card_second;
-}
+// .event_card {
+//    grid-area: event_card;
+// }
+// .event_card_second {
+//   grid-area: event_card_second;
+// }
 
 .sections_wrapper {
   display: flex;
@@ -69,9 +69,8 @@ header {
   width: 90%;
   margin: 0 auto;
 }
-section.first_screen_promo,
-section.find_event,
-section.create_event {
+section.first_screen_about,
+ {
   height: 84vh;
   width: 100%;
   border: 5px solid black;
@@ -100,3 +99,89 @@ a:visited {
   font-size: 30px;
   line-height: 110%;
 }
+.second_screen_about {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr;
+  grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "second_section_headings second_section_headings second_section_headings second_section_headings second_section_headings second_section_headings second_section_headings second_section_headings"
+    "event_card event_card event_card_second event_card_second . . . ."
+    "event_card event_card event_card_second event_card_second . . . ."
+    "event_card event_card event_card_second event_card_second . . . ."
+    "event_card event_card event_card_second event_card_second subscribe_input subscribe_input subscribe_input subscribe_input";
+  margin-top: 40px;
+}
+.second_section_headings {
+   grid-area: second_section_headings;
+   padding: 20px 0 0 20px;
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-end;
+   flex-direction: row;
+   border-bottom: 5px solid black;
+}
+
+.second_section_headings h2 {
+  line-height: 70px;
+  width: 515px;
+  height: 113px;
+  left: 883px;
+  top: 123px;
+}
+section.second_screen_about{
+  height: 84vh;
+  width: 100%;
+  border: 5px solid black;
+  margin-bottom: 56px;
+}
+.description p {
+  
+}
+.third_screen_about {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr;
+  grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "second_section_headings second_section_headings second_section_headings second_section_headings second_section_headings second_section_headings second_section_headings second_section_headings"
+    "event_card event_card event_card_second event_card_second . . . ."
+    "event_card event_card event_card_second event_card_second . . . ."
+    "event_card event_card event_card_second event_card_second . . . ."
+    "event_card event_card event_card_second event_card_second subscribe_input subscribe_input subscribe_input subscribe_input";
+  margin-top: 40px;
+}
+.third_section_headings {
+   grid-area: second_section_headings;
+   padding: 20px 0 0 20px;
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-end;
+   flex-direction: row;
+   border-bottom: 5px solid black;
+}
+
+.third_section_headings h2 {
+  line-height: 70px;
+  width: 1700px;
+  height: 113px;
+  left: 883px;
+  top: 123px;
+}
+section.third_screen_about, {
+  height: 84vh;
+  width: 100%;
+  border: 5px solid black;
+  margin-bottom: 56px;
+}
+.arrow_picture {
+  position: absolute;
+  width: 491px;
+  height: 0px;
+  left: 682px;
+  top: 907px;
+
+  border: 5px solid #000000;
+  box-sizing: border-box;
+  transform: rotate(90deg);
+  }
