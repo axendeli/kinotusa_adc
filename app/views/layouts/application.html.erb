@@ -14,6 +14,12 @@
         <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
       </head>
 
+      <% if notice %>
+  <p class="notice"><%= notice %></p>
+<% elsif alert %>
+  <p class="alert"><%= alert %></p>
+<% end %>
+
       <body>
         <%= yield %>
       </body>
