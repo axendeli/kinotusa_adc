@@ -6,22 +6,20 @@
         <title>Kinotusovka</title>
         <%= csrf_meta_tags %>
         <%= csp_meta_tag %>
-
         <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
         <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-
         <% if notice %>
           <%= notice %>
         <% end %>
       </head>
 
-
       <body>
         <header>
           <div class="logo"><%= image_tag("logo.svg") %></div>
           <div class="header_actions">
-            <%= link_to "о  поекте", about_path %>
-            <div class="btn_primary">создать&nbsp;мероприятие</div>
+            <%= link_to "о поекте", about_path %>
+            <button type="button" class="btn_primary" name="button">создать&nbsp;мероприятие
+            </button>
             <div class="">войти</div>
             <div class="serarator_wrapper">
                <div class="separator"></div>
@@ -30,18 +28,20 @@
           </div>
         </header>
 
-         <div class="sections_wrapper">
-
            <section class="first_screen_promo">
-             <div class="first_section_headings">
-               <%= image_tag("rays.svg") %>
-               <h1>СТАНЬ ЧАСТЬЮ КИНО-СООБЩЕСТВА</h1>
-               <%= image_tag("rays.svg") %>
-            <button class="btn_primary" type="button" name="button">узнать про киночество</button>
+            <div class="first_section_h1_rays">
+                <%= image_tag("rays.svg") %>
+                <h1>СТАНЬ ЧАСТЬЮ КИНО-СООБЩЕСТВА</h1>
+                <%= image_tag("rays.svg") %>
+            </div>
+            <button class="btn_primary" type="button" name="button">
+              узнать про киночество
+              <%= image_tag("arrow_btn.svg") %>
+            </button>
            </section>
 
            <section class="do_not_miss_party">
-             <h2>НЕ ПРОПУСТИ ИНТЕРЕСНУЮ ТУСОВКУ</h2>
+             <h2>НЕ ПРОПУСТИ<br>ИНТЕРЕСНУЮ<br>ТУСОВКУ</h2>
                   <p class="do_not_miss_party_p">ищите интересные киножанры,    присоединяйтесь к тусовкам и становитесь частью нового комьюнити!</p>
             <!-- <div class="subscribe_input">
                 <span class="subscribe_lable">Подпишись, чтобы не пропустить релиз проекта</span>
@@ -79,10 +79,9 @@
               </p>
               <%= image_tag("rays.svg") %>
               <%= image_tag("event_huge.png") %>
-
            </section>
 
-           <section class="opportunities_text">
+           <section class="opportunities">
             <div class="opportunities_text">
               <h2>ПОЛУЧАЙ ЭКСКЛЮЗИВНЫЕ ВОЗМОЖНОСТИ</h2>
               <p>Мы коллабимся с такими челами, как: опиа, циферблат, кинофонд, мосфильм, мир кино, иное кино, искусство кино и многими другими!
@@ -111,7 +110,7 @@
               </button>
            </section>
 
-           <section>
+           <section class="join_us">
              <%= image_tag("rays.svg") %>
              <h2>СТАНЬ ЧАСТЬЮ КИНОЧЕСТВА</h2>
              <%= image_tag("rays.svg") %>
@@ -122,7 +121,7 @@
            </section>
 
          <footer>
-
+           
            <div class="footer_top">
                <div class="logo"><%= image_tag("logo.svg") %></div>
              <span>По любым вопросам</span>
@@ -156,11 +155,9 @@
                 Our service name 2020
               </span>
             </div>
-
            </div>
 
          </footer>
 
         </body>
-
     </html>

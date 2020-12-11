@@ -2,47 +2,38 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 body {
-  background:#111111!important;
-  color: white!important;
+  background: var(--black);
+  color: white;
 }
 header {
   color: white;
 }
-
 h1 {
   font-family: 'ManegeDemo';
   font-size: 160px;
   text-align: center;
+  margin: 4% 0 2% 0;
 }
-
-
+h2 {
+  padding-left: 10%;
+}
 .first_screen_promo {
-  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
-.first_section_headings {
-   grid-area: first_section_headings;
-   padding: 20px 20px;
+.first_section_h1_rays {
    display: flex;
+   align-items: center;
    justify-content: space-between;
-   align-items: flex-end;
-   flex-direction: row;
 }
-.first_section_headings h2 {
-  line-height: 70px;
+.first_screen_promo button.btn_primary {
+  display: flex;
 }
 .first_section_headings span {
   font-size: 24px;
   line-height: 120%;
   letter-spacing: 0.005em;
-}
-.first_section_headings .btn_primary {
-  display: block;
-}
-.event_card {
-   grid-area: event_card;
-}
-.event_card_second {
-  grid-area: event_card_second;
 }
 // .subscribe_input {
 //   grid-area: subscribe_input;
@@ -81,117 +72,24 @@ h1 {
 //   left: 560px;
 //   top: 12px;
 // }
-.sections_wrapper {
-  display: flex;
-  flex-direction: column;
-  width: 90%;
-  margin: 0 auto;
+.do_not_miss_party,
+.create_event,
+.get_emotions,
+.opportunities,
+.join_us {
+  margin-top: 10%;
 }
-section.first_screen_promo,
-section.find_event,
-section.create_event {
-  height: 84vh;
-  width: 100%;
-  margin-bottom: 56px;
-}
-
-
-
-.find_event_description {
-  grid-area: find_event_description;
-  padding: 20px;
-  font-weight: regular;
-  margin-top: -40px;
-}
-.find_event_actions,
-.find_event_date_time_place,
-.find_event h2 {
-    padding: 20px 0 0 20px;
-}
-.find_event_date_time_place {
-  grid-area: find_event_date_time_place;
-  padding: 20px 0 0 20px;
-  margin-top: -40px;
-}
-.find_event_h1_and_description {
-  grid-area: find_event_h1_and_description;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  border-right: var(--bold-border);
-  font-weight: regular;
-}
-.event_page_photo {
-  overflow: hidden;
-}
-.find_event_heading {
-  font-size: 28px;
-  font-family: 'ManegeDemo';
-  font-weight: bold;
-  letter-spacing: 0.03em;
-  line-height: 120%;
-  height: 80px;
-  padding: 20px 0 0 20px;
-}
-.find_event_h1_and_description span,
-.event_creation_heading_and_description span {
-  padding-left: 20px;
-  padding-bottom: 20px;
-  font-size: 20px;
-  line-height: 120%;
-}
-.event_creation_heading_and_description span {
-  padding-left: 0;
-}
-.find_event_actions {
-  .btn_primary {
-    border: 1px solid white;
-    padding: 9px 16px 5px;
-    max-height: 40px;
-    border-radius: 20px;
+.do_not_miss_party,
+.create_event,
+.get_emotions,
+.opportunities,
+.join_us {
+  p {
+    margin-left: 30%;
+    width: 40%;
+    font-size: 26px;
+    font-family: 'SuisseIntl-Regular';
+    font-weight: normal;
     text-transform: uppercase;
-    width: auto;
-  }
-}
-.find_event_actions {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 20px;
-  height: 60px;
-}
-.create_event {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  gap: 0px 0px;
-  grid-template-areas:
-    "event_creation_illustration event_creation_heading_and_description";
-}
-.event_creation_illustration {
-  grid-area: event_creation_illustration;
-  position: relative;
-  max-width: 100%;
-}
-.event_creation_heading_and_description {
-  grid-area: event_creation_heading_and_description;
-  padding: 20px 0 0 20px;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-}
-.find_event .place {
-  display: flex;
-}
-.event_page_date_and_time {
-  padding-top: 16px;
-}
-.event_page_date_and_time {
-  padding-top: 16px;
-}
-.find_event {
-  .place span,
-  .date span {
-    padding-left: 8px;
   }
 }

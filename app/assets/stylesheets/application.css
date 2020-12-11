@@ -11,9 +11,12 @@
     font-weight: 300;
     font-style: normal;
 }
-
-font-face {
-  font-family: "Suisse Intl"; src: url("//db.onlinewebfonts.com/t/88f10bf18a36407ef36bf30bc25a3618.eot"); src: url("//db.onlinewebfonts.com/t/88f10bf18a36407ef36bf30bc25a3618.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/88f10bf18a36407ef36bf30bc25a3618.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/88f10bf18a36407ef36bf30bc25a3618.woff") format("woff"), url("//db.onlinewebfonts.com/t/88f10bf18a36407ef36bf30bc25a3618.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/88f10bf18a36407ef36bf30bc25a3618.svg#Suisse Intl") format("svg");
+@font-face {
+  font-family: "Suisse Intl";
+  src: local('SuisseIntl-Regular'), local('SuisseIntl-Regular')
+  url('SuisseIntl-Regular.otf') format('otf');
+  font-weight: 300;
+  font-style: normal;
 }
 
 :root {
@@ -22,8 +25,13 @@ font-face {
 :root {
   --black: #0F0F0F;
 }
+html {
+  overflow-x: hidden;
+}
 body {
   font-family: "SuisseIntl";
+  background-color: var(--black);
+  overflow-x: hidden;
 }
 a {
   color: white;
@@ -41,7 +49,7 @@ header {
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
-  background-color: #111111;
+  background-color: var(--grayDark);
   color: white;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -51,6 +59,7 @@ header .header_actions {
   align-items: center;
   flex-direction: row;
   margin-right: 10%;
+  font-family: 'SuisseIntl';
 }
 .header_actions div:not(:last-child),
 .header_actions a {
@@ -70,11 +79,12 @@ header a {
   transform: rotate(-45deg);
   margin-right: 0;
 }
-header .btn_primary {
+header button.btn_primary {
   border: 2px solid white;
   border-radius: 20px;
   padding: 6px 12px 2px;
   background-color: none;
+  margin-right: 3%;
 }
 .btn_primary {
   border: 1px solid white;
@@ -102,6 +112,7 @@ footer {
   justify-content: space-between;
   align-items: flex-end;
   padding: 56px 0;
+  background-color: var(--grayDark);
 }
 .contact_us {
   padding-left: 5%;
