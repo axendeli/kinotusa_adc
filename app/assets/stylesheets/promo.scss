@@ -1,6 +1,3 @@
-// Place all the styles related to the Promo controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: https://sass-lang.com/
 body {
   background: var(--black);
   color: white;
@@ -34,6 +31,15 @@ h2 {
   font-size: 24px;
   line-height: 120%;
   letter-spacing: 0.005em;
+}
+.do_not_miss_party_images {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+}
+.do_not_miss_party_images img {
+  width: 30%;
 }
 // .subscribe_input {
 //   grid-area: subscribe_input;
@@ -85,10 +91,12 @@ h2 {
 .opportunities,
 .join_us {
   p {
-    margin-left: 30%;
+    margin-left: 40%;
     width: 40%;
     font-size: 26px;
-    font-family: 'SuisseIntl-Regular';
+    letter-spacing: 0.02em;
+    line-height: 120%;
+    font-family: 'Suisse Intl';
     font-weight: normal;
     text-transform: uppercase;
   }
