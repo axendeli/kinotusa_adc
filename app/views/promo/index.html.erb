@@ -17,7 +17,6 @@
 
 
       <body>
-
         <header>
           <div class="logo"><%= image_tag("logo.svg") %></div>
           <div class="header_actions">
@@ -73,18 +72,59 @@
                  <p class="merch_description">лимитированное издание для начинающих киноведов от опытных киноведов</p>
            </section>
 
-             <h2>ПОЛУЧИ ЭМОЦИИ В ПОДАРОК</h2>
-             <p>ЗАРЕГИСТРИРУЙСЯ СЕГОДНЯ, И ПОЛУЧИ В ПОДАРОК ЭКСКЛЮЗИВный мерч для киноведов и организаторов киночества!</p>
-             <%= image_tag("merch.png") %>
-
            <section>
               <h2>ПОГРУЗИСЬ В МИР КИНО</h2>
+              <p>ОРГАНИЗАТОРЫ И УЧАСТНИКИ ПОЛУЧАЮТ ЭКСКЛЮЗИВНУЮ ВОЗМОЖНОСТЬ ПЕРВЫМИ УЗНАВАТЬ О ВЫСТУПЛЕНИЯХ
+              И ЛЕКЦИЯХ РАЗНЫХ ДЕЯТЕЛЕЙ КИНОИНДУСТРИИ
+              </p>
+              <%= image_tag("rays.svg") %>
+              <%= image_tag("event_huge.png") %>
+
+           </section>
+
+           <section class="opportunities_text">
+            <div class="opportunities_text">
+              <h2>ПОЛУЧАЙ ЭКСКЛЮЗИВНЫЕ ВОЗМОЖНОСТИ</h2>
               <p>Мы коллабимся с такими челами, как: опиа, циферблат, кинофонд, мосфильм, мир кино, иное кино, искусство кино и многими другими!
               </p>
+            </div>
+              <div class="events">
+                <div class="event">
+                  <%= image_tag("event1.png") %>
+                  <span class="event_date">10 декабря</span>
+                  <span class="event_description">Кушнерова Марианна о своей роли в «Станционном смотрителе»</span>
+                </div>
+                <div class="event2">
+                  <%= image_tag("event3.png") %>
+                  <span class="event_date">10 декабря</span>
+                  <span class="event_description">Кушнерова Марианна о своей роли в «Станционном смотрителе»</span>
+                </div>
+                <div class="event">
+                  <%= image_tag("event2.png") %>
+                  <span class="event_date">10 декабря</span>
+                  <span class="event_description">Кушнерова Марианна о своей роли в «Станционном смотрителе»</span>
+                </div>
+              </div>
+              <button type="button" name="button" class="btn_primary">
+                     СОЗДАТЬ МЕРОПРИЯТИЕ
+                    <%= image_tag("arrow_btn.svg") %>
+              </button>
+           </section>
+
+           <section>
+             <%= image_tag("rays.svg") %>
+             <h2>СТАНЬ ЧАСТЬЮ КИНОЧЕСТВА</h2>
+             <%= image_tag("rays.svg") %>
+             <button type="button" name="button" class="btn_primary">
+                    посетить киночество
+                   <%= image_tag("arrow_btn.svg") %>
+             </button>
            </section>
 
          <footer>
-           <div class="contact_us">
+
+           <div class="footer_top">
+               <div class="logo"><%= image_tag("logo.svg") %></div>
              <span>По любым вопросам</span>
              <div class="social">
                <%= image_tag("vk.svg") %>
@@ -92,10 +132,33 @@
                <%= image_tag("fb.svg") %>
                <%= image_tag("tg.svg") %>
              </div>
+             <span class="service_name">
+               Our service name 2020
+             </span>
+
+            <div class="footer_contacts">
+              <div class="footer_text">
+                <span>Чтобы связаться с нами, звоните</span>
+                <a class="footer_link" href="tel:+9 (915) 355 355">+9 (915) 355 355</a>
+              </div>
+
+              <div class="footer_text">
+                <span>Пишите</span>
+                <span>hello@kinochestvo.com</span>
+              </div>
+
+              <div class="footer_text">
+                <span>И узнайте подробнее</span>
+                <a href="#">о нашем проекте</a>
+              </div>
+
+              <span class="service_name">
+                Our service name 2020
+              </span>
+            </div>
+
            </div>
-           <span class="service_name">
-             Our service name 2020
-           </span>
+
          </footer>
 
         </body>

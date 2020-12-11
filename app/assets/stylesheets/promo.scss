@@ -12,6 +12,7 @@ header {
 h1 {
   font-family: 'ManegeDemo';
   font-size: 160px;
+  text-align: center;
 }
 
 
@@ -88,68 +89,10 @@ section.find_event,
 section.create_event {
   height: 84vh;
   width: 100%;
-  border: 5px solid white;
   margin-bottom: 56px;
 }
-.event_card,
-.event_card_second {
-  h3 {
-   font-family: 'NEXT ART';
-   font-weight: bold;
-   letter-spacing: 0.05em;
-   font-size: 20px;
-   line-height: 120%;
-  }
-  .time {
-     border-left: 5px solid white;
-  }
-}
-.event_card,
-.event_card_second {
-   h3,
-  .date,
-  .time,
-  .place,
-  .organizator {
-    border-bottom: 5px solid white;
-    padding: 12px;
-  }
-}
-.empty {
-  width: 100%;
-  border-right: 5px solid white;
-  border-top: 5px solid white;
-  margin-top: auto;
-}
-.event_card_second .organizator {
-  border-bottom: none;
-}
-.date_and_time {
-  display: flex;
-  justify-content: space-between;
-  align-items: stretch;
-}
-.time,
-.date {
-  flex: 1;
-}
-.event_card,
-.event_card_second {
-  border-right: 5px solid white;
-  display: flex;
-  flex-direction: column;
-}
-.event_page_photo {
-  grid-area: event_page_photo;
-}
 
-.find_event_heading {
 
-}
-
-.find_event_actions {
-
-}
 
 .find_event_description {
   grid-area: find_event_description;
@@ -157,7 +100,6 @@ section.create_event {
   font-weight: regular;
   margin-top: -40px;
 }
-
 .find_event_actions,
 .find_event_date_time_place,
 .find_event h2 {
@@ -166,7 +108,7 @@ section.create_event {
 .find_event_date_time_place {
   grid-area: find_event_date_time_place;
   padding: 20px 0 0 20px;
-    margin-top: -40px;
+  margin-top: -40px;
 }
 .find_event_h1_and_description {
   grid-area: find_event_h1_and_description;
@@ -181,7 +123,7 @@ section.create_event {
 }
 .find_event_heading {
   font-size: 28px;
-  font-family: 'ManegeDemo-Light';
+  font-family: 'ManegeDemo';
   font-weight: bold;
   letter-spacing: 0.03em;
   line-height: 120%;
@@ -198,7 +140,6 @@ section.create_event {
 .event_creation_heading_and_description span {
   padding-left: 0;
 }
-
 .find_event_actions {
   .btn_primary {
     border: 1px solid white;
@@ -215,7 +156,6 @@ section.create_event {
   align-items: center;
   padding: 20px;
   height: 60px;
-  border-bottom: var(--bold-border);
 }
 .create_event {
   display: grid;
@@ -227,7 +167,6 @@ section.create_event {
 }
 .event_creation_illustration {
   grid-area: event_creation_illustration;
-  border-right: var(--bold-border);
   position: relative;
   max-width: 100%;
 }
@@ -252,41 +191,4 @@ section.create_event {
   .date span {
     padding-left: 8px;
   }
-}
-.steps_img {
-  margin: 0 auto;
-  padding-top: 60px;
-  display: flex;
-  justify-content: center;
-  transform: scale(0.9);
-}
-.crop_img {
-  padding: 48px 20px 20px 72px;
-}
-.downloaded_img {
-  left: 60px;
-  position: absolute;
-  top: 140px;
-  z-index: -1;
-}
-.input_date {
-  padding-top: 48px;
-  transform: scale(0.9);
-}
-.name_and_geners_wrapper,
-.date_and_img_wrapper {
-  display: flex;
-}
-.date_and_img_wrapper {
-  padding-top: 40px;
-}
-.input_name {
-  transform: scale(0.8);
-  padding-top: 40px;
-}
-.name_and_geners_wrapper {
-  padding: 20px 20px 0 40px;
-}
-.event_page_date_and_time .date {
-  padding-left: 12px;
 }
