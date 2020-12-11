@@ -35,49 +35,52 @@ h1 {
   line-height: 120%;
   letter-spacing: 0.005em;
 }
+.first_section_headings .btn_primary {
+  display: block;
+}
 .event_card {
    grid-area: event_card;
 }
 .event_card_second {
   grid-area: event_card_second;
 }
-.subscribe_input {
-  grid-area: subscribe_input;
-}
-span.subscribe_lable {
-  margin-left: 260px;
-  margin-bottom: 20px;
-}
-input#subscriber_email {
-  height: 100px;
-  width: 80%;
-  padding-left: 20px;
-  border-radius: 0;
-  border: none;
-  position: relative;
-  font-family: 'SuisseIntl-Regular';
-  font-size: 20px;
-}
-input[type="submit"] {
-  background: none;
-  border: none;
-}
-form#new_subscriber {
-  width: 100%;
-
-  margin-top: 20px;
-}
-.new_subscriber {
-  position: relative;
-}
-.new_subscriber::before {
-  content: url("arrow_inp.svg");
-  position: absolute;
-  height: 30px;
-  width: 50px;
-  left: 560px;
-  top: 12px;
-}
+// .subscribe_input {
+//   grid-area: subscribe_input;
+// }
+// span.subscribe_lable {
+//   margin-left: 260px;
+//   margin-bottom: 20px;
+// }
+// input#subscriber_email {
+//   height: 100px;
+//   width: 80%;
+//   padding-left: 20px;
+//   border-radius: 0;
+//   border: none;
+//   position: relative;
+//   font-family: 'SuisseIntl-Regular';
+//   font-size: 20px;
+// }
+// input[type="submit"] {
+//   background: none;
+//   border: none;
+// }
+// form#new_subscriber {
+//   width: 100%;
+//
+//   margin-top: 20px;
+// }
+// .new_subscriber {
+//   position: relative;
+// }
+// .new_subscriber::before {
+//   content: url("arrow_inp.svg");
+//   position: absolute;
+//   height: 30px;
+//   width: 50px;
+//   left: 560px;
+//   top: 12px;
+// }
 .sections_wrapper {
   display: flex;
   flex-direction: column;
