@@ -7,20 +7,15 @@ body {
 }
 header {
   color: white;
-  border-bottom: solid white 5px;
 }
 
+h1 {
+  font-family: 'ManegeDemo';
+  font-size: 160px;
+}
+
+
 .first_screen_promo {
-  display: grid;
-  grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr;
-  grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
-  gap: 0px 0px;
-  grid-template-areas:
-    "first_section_headings first_section_headings first_section_headings first_section_headings first_section_headings first_section_headings first_section_headings first_section_headings"
-    "event_card event_card event_card_second event_card_second . . . ."
-    "event_card event_card event_card_second event_card_second . . . ."
-    "event_card event_card event_card_second event_card_second . . . ."
-    "event_card event_card event_card_second event_card_second subscribe_input subscribe_input subscribe_input subscribe_input";
   margin-top: 40px;
 }
 .first_section_headings {
@@ -30,7 +25,6 @@ header {
    justify-content: space-between;
    align-items: flex-end;
    flex-direction: row;
-   border-bottom: 5px solid white;
 }
 .first_section_headings h2 {
   line-height: 70px;
@@ -60,7 +54,7 @@ input#subscriber_email {
   border-radius: 0;
   border: none;
   position: relative;
-  font-family: 'PT Mono';
+  font-family: 'SuisseIntl-Regular';
   font-size: 20px;
 }
 input[type="submit"] {
@@ -69,7 +63,7 @@ input[type="submit"] {
 }
 form#new_subscriber {
   width: 100%;
-  border-top: var(--bold-border);
+
   margin-top: 20px;
 }
 .new_subscriber {
@@ -145,28 +139,16 @@ section.create_event {
   display: flex;
   flex-direction: column;
 }
-.find_event {
-  display: grid;
-  grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr;
-  grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
-  gap: 0px 0px;
-  grid-template-areas:
-    "find_event_h1_and_description find_event_h1_and_description find_event_h1_and_description find_event_h1_and_description find_event_h1_and_description event_page_photo event_page_photo event_page_photo event_page_photo event_page_photo"
-    "find_event_h1_and_description find_event_h1_and_description find_event_h1_and_description find_event_h1_and_description find_event_h1_and_description event_page_photo event_page_photo event_page_photo event_page_photo event_page_photo"
-    "find_event_h1_and_description find_event_h1_and_description find_event_h1_and_description find_event_h1_and_description find_event_h1_and_description event_page_photo event_page_photo event_page_photo event_page_photo event_page_photo"
-    "find_event_h1_and_description find_event_h1_and_description find_event_h1_and_description find_event_h1_and_description find_event_h1_and_description find_event_heading find_event_heading find_event_heading find_event_actions find_event_actions"
-    "find_event_h1_and_description find_event_h1_and_description find_event_h1_and_description find_event_h1_and_description find_event_h1_and_description find_event_description find_event_description find_event_description find_event_date_time_place find_event_date_time_place";
-}
 .event_page_photo {
   grid-area: event_page_photo;
 }
 
 .find_event_heading {
-  grid-area: find_event_heading;
+
 }
 
 .find_event_actions {
-  grid-area: find_event_actions;
+
 }
 
 .find_event_description {
@@ -199,11 +181,10 @@ section.create_event {
 }
 .find_event_heading {
   font-size: 28px;
-  font-family: 'NEXT ART';
+  font-family: 'ManegeDemo-Light';
   font-weight: bold;
   letter-spacing: 0.03em;
   line-height: 120%;
-  border-bottom: var(--bold-border);
   height: 80px;
   padding: 20px 0 0 20px;
 }
@@ -217,19 +198,15 @@ section.create_event {
 .event_creation_heading_and_description span {
   padding-left: 0;
 }
-.find_event_heading,
-.find_event_description {
-   border-right: var(--bold-border);
-}
+
 .find_event_actions {
   .btn_primary {
-    border: 3px solid white;
+    border: 1px solid white;
     padding: 9px 16px 5px;
     max-height: 40px;
     border-radius: 20px;
     text-transform: uppercase;
     width: auto;
-    border-bottom: var(--bold-border);
   }
 }
 .find_event_actions {

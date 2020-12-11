@@ -1,52 +1,29 @@
 @import "reset.css";
 
 @font-face {
-    font-family: 'Next Art';
-    src: local('NEXT ART Regular'), local('NEXTART-Regular'), url('Nextartregular.woff2') format('woff2'), url('Nextartregular.woff') format('woff'), url('Nextartregular.ttf') format('truetype');
-    font-weight: 400;
+    font-family: 'Manege Demo';
+    src: url('ManegeDemo-Light.eot');
+    src: local('Manege Demo Light'), local('ManegeDemo-Light'),
+        url('ManegeDemo-Light.eot?#iefix') format('embedded-opentype'),
+        url('ManegeDemo-Light.woff2') format('woff2'),
+        url('ManegeDemo-Light.woff') format('woff'),
+        url('ManegeDemo-Light.ttf') format('truetype');
+    font-weight: 300;
     font-style: normal;
-}
-@font-face {
-    font-family: 'Next Art';
-    src: local('NEXT ART Bold'), local('NEXTART-Bold'), url('Nextartbold.woff2') format('woff2'), url('Nextartbold.woff') format('woff'), url('Nextartbold.ttf') format('truetype');
-    font-weight: 700;
-    font-style: normal;
-}
-@font-face {
-  font-family: 'PT Mono';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../fonts/pt-mono-v8-latin_cyrillic-regular.eot'); \
-  src: local('PT Mono'), local('PTMono-Regular'),
-       url('../fonts/pt-mono-v8-latin_cyrillic-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/pt-mono-v8-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/pt-mono-v8-latin_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/pt-mono-v8-latin_cyrillic-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/pt-mono-v8-latin_cyrillic-regular.svg#PTMono') format('svg'); /* Legacy iOS */
-}
-@font-face {
-  font-family: 'PT Mono';
-	src: url('ptm55f_w.eot');
-	src: local('PT Mono'), url('ptm55f_w.eot?#iefix') format('embedded-opentype'),url('ptm55f_w.woff') format('woff'),url('ptf55m_w.ttf') format('truetype'), url('ptm55f_w.svg#PTMono-Regular') format('svg');
-}
-@font-face {
-  font-family: 'PT Mono';
-	src: url('ptm75f_w.eot');
-	font-style: normal;
-	font-weight: bold;
-	src: local('PT Mono Bold'), url('ptm75f_w.eot?#iefix') format('embedded-opentype'), url('ptm75f_w.woff') format('woff'),url('ptm75f_w.ttf') format('truetype'), url('ptm75f_w.svg#PTMono-Bold') format('svg');
 }
 
-:root {
-  --bold-border: 5px solid white;
+font-face {
+  font-family: "Suisse Intl"; src: url("//db.onlinewebfonts.com/t/88f10bf18a36407ef36bf30bc25a3618.eot"); src: url("//db.onlinewebfonts.com/t/88f10bf18a36407ef36bf30bc25a3618.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/88f10bf18a36407ef36bf30bc25a3618.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/88f10bf18a36407ef36bf30bc25a3618.woff") format("woff"), url("//db.onlinewebfonts.com/t/88f10bf18a36407ef36bf30bc25a3618.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/88f10bf18a36407ef36bf30bc25a3618.svg#Suisse Intl") format("svg");
 }
+
 :root {
   --black: #111111;
 }
-
+:root {
+  --black: #1E1E1E;
+}
 body {
   font-family: "PT Mono";
-
 }
 a {
   color: white;
@@ -57,7 +34,7 @@ a:visited {
 header {
   width: 100%;
   height: 4vw;
-  font-family: 'PT Mono';
+  font-family: 'SuisseIntl-Regular';
   font-style: normal;
   font-weight: 400;
   display: flex;
@@ -83,9 +60,6 @@ header a {
   white-space: nowrap;
 }
 .logo {
-  font-family: 'Next Art';
-  font-weight: bold;
-  font-size: 24px;
   padding-left: 5%;
 }
 .header_actions div.separator {
@@ -97,10 +71,18 @@ header a {
   margin-right: 0;
 }
 header .btn_primary {
-  border: 3px solid white;
+  border: 1px solid white;
   border-radius: 20px;
   padding: 6px 12px 2px;
 }
+
+.btn_primary {
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 6px 12px 2px;
+  font-family: 'SuisseIntl';
+}
+
 h2 {
   font-size: 84px;
   line-height: 100%;
@@ -109,7 +91,6 @@ h2 {
 }
 footer {
   width: 100%;
-  border-top: var(--bold-border);
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
