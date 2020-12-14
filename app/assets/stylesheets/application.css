@@ -30,6 +30,7 @@ body {
 }
 a {
   color: white;
+  text-decoration: none;
 }
 a:visited {
   color: white;
@@ -54,11 +55,11 @@ header .header_actions {
   align-items: center;
   flex-direction: row;
   margin-right: 10%;
-  font-family: 'SuisseIntl';
+  font-family: 'Suisse Intl';
 }
 .header_actions div:not(:last-child),
 .header_actions a {
-  margin-right: 3%;
+  margin-right: 4%;
 }
 header a {
   white-space: nowrap;
@@ -74,20 +75,26 @@ header a {
   transform: rotate(-45deg);
   margin-right: 0;
 }
-header button.btn_primary {
-  border: 2px solid white;
-  border-radius: 20px;
-  padding: 6px 12px 2px;
-  background-color: none;
-  margin-right: 3%;
-}
 .btn_primary {
   border: 1px solid white;
   border-radius: 20px;
-  padding: 6px 12px 2px;
-  font-family: 'SuisseIntl';
+  padding: 8px 12px 6px;
+  font-family: 'Suisse Intl';
   background-color: var(--black);
   color: white;
+  text-transform: uppercase;
+  white-space: nowrap;
+  width: fit-content;
+}
+.btn_primary img {
+  padding: 1% 4% 1%;
+}
+header button.btn_primary {
+  border: 2px solid white;
+  border-radius: 20px;
+  background-color: var(--grayDark);
+  margin-right: 4%;
+    width: fit-content;
 }
 h1 {
   font-size: 130px;
