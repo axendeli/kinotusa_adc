@@ -9,20 +9,23 @@ h1 {
   font-family: 'ManegeDemo';
   font-size: 160px;
   text-align: center;
-  margin: 4% 0 2% 0;
+  margin: 0;
 }
 h2 {
   padding-left: 10%;
 }
 .first_screen_promo {
-  display: flex;
   align-items: center;
   flex-direction: column;
+  height: 84vh;
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-around;
 }
 .first_section_h1_rays {
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .first_screen_promo button.btn_primary {
   display: flex;
@@ -36,10 +39,11 @@ h2 {
   align-items: center;
   justify-content: center;
   display: flex;
+  margin-top: 6%;
   flex-direction: row;
 }
 .do_not_miss_party_images img {
-  width: 30%;
+  width: 28%;
 }
 // .subscribe_input {
 //   grid-area: subscribe_input;
@@ -93,7 +97,7 @@ h2 {
 .join_us,
 .jump_into_cinema {
   p {
-    margin-left: 40%;
+    margin-left: 56%;
     width: 40%;
     font-size: 26px;
     letter-spacing: 0.02em;
@@ -102,4 +106,27 @@ h2 {
     font-weight: normal;
     text-transform: uppercase;
   }
+}
+p.merch_description {
+  text-align: center;
+  display: flex;
+  margin: 0 auto;
+  padding-top: 2%;
+}
+.jump_into_cinema {
+  position: relative;
+}
+.jump_into_cinema img {
+  position: absolute;
+  top: 20px;
+}
+.jump_into_cinema img:not(first-child) {
+  top: 20px;
+  left: 25%;
+  z-index: -1;
+}
+.btn_primary {
+  display: flex;
+  margin: 0 auto;
+  align-self: center;
 }
