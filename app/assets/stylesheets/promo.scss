@@ -22,6 +22,7 @@ h2 {
   display: flex;
   justify-content: space-around;
 }
+
 .first_section_h1_rays {
   display: flex;
   align-items: center;
@@ -186,5 +187,44 @@ p.merch_description {
   text-transform: uppercase;
 }
 .speaker_name {
+  font-family: 'ManegeDemo';
+}
+.join_us {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  h2 {
+    padding-left: 0;
+  }
+}
+.join_us {
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+  align-content: center;
+  img {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    transform: scale(1.6);
+  }
+  h2 {
+    padding: 0 14%;
+  }
+  .btn_primary {
+    display: flex;
+  }
+}
+.h2_and_rays {
+  display: flex;
+  flex-direction:row;
+  align-self: center;
+}
+footer a,
+.footer_link,
+.email {
   font-family: 'ManegeDemo';
 }

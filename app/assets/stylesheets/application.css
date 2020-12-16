@@ -49,7 +49,6 @@ header {
   color: white;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  position: fixed;
 }
 header .header_actions {
   display: flex;
@@ -86,9 +85,6 @@ header a {
   text-transform: uppercase;
   white-space: nowrap;
   width: fit-content;
-  display: flex;
-  margin: 0 auto;
-  align-self: center;
 }
 .btn_primary img {
   padding: 1% 4% 1%;
@@ -113,12 +109,19 @@ h2 {
   font-weight: 300;
 }
 footer {
+  height: 40vh;
+  flex-direction: column;
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
   padding: 56px 0;
   background-color: var(--grayDark);
+  align-items: center;
+  text-align: center;
+  margin-top: 10%;
+}
+ .service_name {
+   margin-top: 10%;
 }
 .contact_us {
   padding-left: 5%;
@@ -130,8 +133,12 @@ footer {
 .social img:not(:last-child) {
   padding-right: 20px;
 }
-footer span.service_name {
-  padding-right: 5%;
+.footer_top {
+  display: flex;
+  width: 70%;
+  align-self: center;
+  align-items: center;
+  justify-content: space-between;
 }
 .top_menu {
   display: flex;
@@ -143,9 +150,18 @@ footer span.service_name {
   background: #eee;
   border-bottom: 1px solid #ddd;
 }
+.footer_contacts {
+  display: flex;
+  flex-direction: column;
+}
+.footer_text {
+  padding-bottom: 4%;
+}
 .top_menu a {
   margin: 0 20px;
 }
+
+
 
 
 /*
