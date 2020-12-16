@@ -113,8 +113,12 @@ p.merch_description {
   margin: 0 auto;
   padding-top: 2%;
 }
+.create_event button.btn_primary {
+  margin-top: 8%;
+}
 .jump_into_cinema {
   position: relative;
+  margin-top: 30%;
 }
 .jump_into_cinema img {
   position: absolute;
@@ -124,23 +128,35 @@ p.merch_description {
   top: 20px;
   left: 25%;
   z-index: -1;
+  top: -200px;
 }
 .jump_into_cinema div.rays_svg img {
   z-index: 1;
+  left: 870px;
 }
 .friends_logos {
   display: flex;
   width: 80%;
   justify-content: space-around;
   align-items: center;
-  margin: 8% 6%;
+  margin: 8% auto;
+}
+.opportunities .btn_primary {
+  margin-top: 8%;
 }
 .events,
 .event1,
 .event2,
 .event3 {
   display: flex;
-
+}
+.events {
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  width: 90%;
+  align-self: center;
+  margin: 0 auto;
 }
 .event1,
 .event2,
@@ -159,8 +175,16 @@ p.merch_description {
 }
 .event_description {
   width: 80%;
-  marg
+  margin-top: 4%;
+  font-size: 19px;
+  text-transform: uppercase;
+  line-height: 120%;
 }
 .event_date {
-  margin-top: 4%;
+  font-size: 19px;
+  margin-top: 8%;
+  text-transform: uppercase;
+}
+.speaker_name {
+  font-family: 'ManegeDemo';
 }
