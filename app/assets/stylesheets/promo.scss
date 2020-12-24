@@ -22,7 +22,6 @@ h2 {
   display: flex;
   justify-content: space-around;
 }
-
 .first_section_h1_rays {
   display: flex;
   align-items: center;
@@ -227,4 +226,14 @@ footer a,
 .footer_link,
 .email {
   font-family: 'ManegeDemo';
+}
+
+
+
+
+@media (min-width: 300px) and (max-width: 375px) {
+
+
+
+
 }

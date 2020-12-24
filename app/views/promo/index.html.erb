@@ -4,6 +4,8 @@
     <html>
       <head>
         <title>Kinotusovka</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <%= csrf_meta_tags %>
         <%= csp_meta_tag %>
         <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -17,16 +19,19 @@
       <body>
         <header>
           <div class="logo"><%= image_tag("logo.svg") %></div>
-          <div class="header_actions">
-            <%= link_to "о поекте", about_path %>
-            <button type="button" class="btn_primary" name="button">создать&nbsp;мероприятие
-            </button>
-            <div class="">войти</div>
-            <div class="serarator_wrapper">
-               <div class="separator"></div>
+          <div class="burger"></div>
+          <nav class="menu">
+            <div class="header_actions">
+              <%= link_to "о поекте", about_path %>
+              <button type="button" class="btn_primary" name="button">создать&nbsp;мероприятие
+              </button>
+              <div class="">войти</div>
+              <div class="serarator_wrapper">
+                 <div class="separator"></div>
+              </div>
+              <div class="">зарегаться</div>
             </div>
-            <div class="">зарегаться</div>
-          </div>
+          </nav>
         </header>
 
            <section class="first_screen_promo">
@@ -43,7 +48,7 @@
 
            <section class="do_not_miss_party">
              <h2>НЕ ПРОПУСТИ<br>ИНТЕРЕСНУЮ<br>ТУСОВКУ</h2>
-                  <p class="do_not_miss_party_p">ищите интересные киножанры,    присоединяйтесь к тусовкам и становитесь частью нового комьюнити!</p>
+                  <p class="do_not_miss_party_p">ищите интересные киножанры, присоединяйтесь к тусовкам и становитесь частью нового комьюнити!</p>
             <!-- <div class="subscribe_input">
                 <span class="subscribe_lable">Подпишись, чтобы не пропустить релиз проекта</span>
                 <%= render "subscribers/form" %>
