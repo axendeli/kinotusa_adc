@@ -338,6 +338,7 @@ footer a,
   }
   .events {
     flex-direction: column;
+    height: 170vh;
   }
   .event1,
   .event2,
@@ -347,6 +348,26 @@ footer a,
       width: 80%;
     }
   }
-
-
+   .h2_and_rays {
+    flex-direction: column;
+    align-items: center;
+  }
+   .h2_and_rays h2 {
+    margin: 10%;
+  }
+   .join_us img {
+    width: 50%;
+    transform: none;
+  }
+  .join_us .btn_primary {
+    display: none;
+  }
+  .join_us .btn_primary.mobile {
+    display: flex;
+    width: 76%;
+    justify-content: space-between;
+  }
+  .join_us .btn_primary.mobile img{
+    width: 30px;
+  }
 }
