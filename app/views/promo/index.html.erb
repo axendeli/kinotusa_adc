@@ -22,22 +22,25 @@
           <div class="burger"></div>
           <nav class="menu">
             <div class="header_actions">
-              <%= link_to "о поекте", about_path %>
-              <button type="button" class="btn_primary" name="button">создать&nbsp;мероприятие
-              </button>
+              <%= link_to "о пpоекте", about_path %>
               <div class="">войти</div>
-              <div class="serarator_wrapper">
+              <div class="separator_wrapper">
                  <div class="separator"></div>
               </div>
               <div class="">зарегаться</div>
+              <button type="button" class="btn_primary" name="button">создать&nbsp;мероприятие
+              </button>
             </div>
           </nav>
         </header>
-
            <section class="first_screen_promo">
             <div class="first_section_h1_rays">
                 <%= image_tag("rays.svg") %>
                 <h1>СТАНЬ ЧАСТЬЮ КИНО-СООБЩЕСТВА</h1>
+                <button class="btn_primary mobile" type="button" name="button">
+                  узнать про киночество
+                  <%= image_tag("arrow_btn.svg") %>
+                </button>
                 <%= image_tag("rays.svg") %>
             </div>
             <button class="btn_primary" type="button" name="button">

@@ -5,14 +5,20 @@ body {
 header {
   color: white;
 }
+
 h1 {
-  font-family: 'ManegeDemo';
-  font-size: 160px;
+  font-family: 'Manege Demo';
+  font-size: 130px;
   text-align: center;
   margin: 0;
+    font-weight: 300;
 }
 h2 {
   padding-left: 10%;
+  font-size: 100px;
+  line-height: 100%;
+  font-family: 'Manege Demo';
+  font-weight: 300;
 }
 .first_screen_promo {
   align-items: center;
@@ -29,6 +35,9 @@ h2 {
 }
 .first_screen_promo button.btn_primary {
   display: flex;
+}
+.btn_primary_mobile {
+  display: none;
 }
 .first_section_headings span {
   font-size: 24px;
@@ -225,5 +234,47 @@ p.merch_description {
 footer a,
 .footer_link,
 .email {
-  font-family: 'ManegeDemo';
+  font-family: 'Manege Demo';
+}
+
+@media (min-width:300px) and (max-width:375px) {
+  h1 {
+    font-size: 13vw;
+    max-width: 90vw;
+    text-align: center;
+    margin-top: 14%;
+    margin-bottom: 8%;
+  }
+  .first_screen_promo {
+    padding-top: 0;
+    height: 100vh;
+    margin-top: 20px;
+  }
+  .first_section_h1_rays {
+    flex-direction: column;
+  }
+  .first_section_h1_rays img {
+    width: 50%;
+  }
+  .first_screen_promo button.btn_primary {
+    display: none;
+  }
+  .first_screen_promo button.btn_primary.mobile {
+    display: flex;
+    margin-bottom: 14%;
+    padding: 12px 14px 8px;
+  }
+  .header_actions div:not(:last-child),
+  .header_actions a {
+    margin-right: 0;
+  }
+
+  //--------------NEXT SECTIONS----------------
+
+  h2 {
+    font-size: 270%;
+    padding-left: 8%;
+  }
+
+
 }

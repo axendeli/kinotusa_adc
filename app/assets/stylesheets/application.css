@@ -36,6 +36,7 @@ a:visited {
   color: white;
 }
 header {
+  position: fixed;
   width: 100%;
   height: 4vw;
   font-family: 'Suisse Intl';
@@ -49,6 +50,7 @@ header {
   color: white;
   text-transform: uppercase;
   letter-spacing: 0.08em;
+  z-index: 3;
 }
 header .header_actions {
   display: flex;
@@ -93,7 +95,7 @@ header button.btn_primary {
   border-radius: 20px;
   background-color: var(--grayDark);
   margin-right: 4%;
-    width: fit-content;
+  width: fit-content;
 }
 
 
@@ -131,39 +133,6 @@ header button.btn_primary {
   background: white;
   transform: rotate(-45deg) translate(4px, -4px);
 }
-
-@media (min-width:300px) and (max-width:375px) {
-  header {
-    height: 6vh;
-  }
-  .burger {
-    visibility: visible;
-    margin-left: 40%;
-  }
-  .menu {
-    visibility: hidden;
-  }
-  .menu-open {
-    visibility: hidden;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    text-transform: uppercase;
-    z-index: 2;
-    visibility: visible;
-    background-color: var(--grayDark);
-    height: 100vh;
-  }
-
-  h1 {
-    font-size: 30px;
-  }
-
-}
 /* .menu-open ul {
   z-index: 1;
   width: 76%;
@@ -182,18 +151,6 @@ header button.btn_primary {
 } */
 
 
-h1 {
-  font-size: 130px;
-  line-height: 100%;
-  font-family: 'Manege Demo';
-  font-weight: 300;
-}
-h2 {
-  font-size: 100px;
-  line-height: 100%;
-  font-family: 'Manege Demo';
-  font-weight: 300;
-}
 footer {
   height: 40vh;
   flex-direction: column;
@@ -248,14 +205,50 @@ footer {
 }
 
 
-@media (min-width: 300px) and (max-width: 375px) {
-  h1 {
-    font-size: 40px;
+@media (min-width:300px) and (max-width:375px) {
+  header {
+    height: 6vh;
+  }
+  .burger {
+    visibility: visible;
+    margin-left: 42%;
+  }
+  .burger-open {
+    margin-right: 8%;
+  }
+  .menu {
+    visibility: hidden;
+  }
+  .menu-open {
+    visibility: hidden;
+    position: fixed;
+    margin-top: 6vh;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    z-index: 2;
+    visibility: visible;
+    background-color: var(--grayDark);
+    height: 100vh;
+    justify-content: center;
+  }
+  header .header_actions {
+    justify-content: space-between;
+    height: 30vh;
+    align-items: center;
   }
   header .header_actions {
     flex-direction: column;
   }
-  .separator {
+  header .header_actions div.separator_wrapper {
     display: none;
   }
+  header .header_actions div.separator {
+    display: none;
+  }
+
 }
