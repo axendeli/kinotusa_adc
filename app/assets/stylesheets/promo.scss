@@ -195,7 +195,7 @@ p.merch_description {
   text-transform: uppercase;
 }
 .speaker_name {
-  font-family: 'ManegeDemo';
+  font-family: 'Manege Demo';
 }
 .join_us {
   text-align: center;
@@ -331,9 +331,22 @@ footer a,
   }
   div .friends_logos {
     flex-wrap: wrap;
+    height: 70vh;
   }
   div .friends_logos img {
-    width: 34%;
+    width: 37%;
   }
+  .events {
+    flex-direction: column;
+  }
+  .event1,
+  .event2,
+  .event3,
+  .event4 {
+    img {
+      width: 80%;
+    }
+  }
+
 
 }
