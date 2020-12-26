@@ -36,7 +36,7 @@ h2 {
 .first_screen_promo button.btn_primary {
   display: flex;
 }
-.btn_primary_mobile {
+button.btn_primary.mobile {
   display: none;
 }
 .first_section_headings span {
@@ -124,6 +124,11 @@ p.merch_description {
 }
 .create_event button.btn_primary {
   margin-top: 8%;
+  margin-left: 40%;
+}
+.opportunities button.btn_primary {
+  margin-top: 8%;
+  margin-left: 43%;
 }
 .jump_into_cinema {
   position: relative;
@@ -222,6 +227,7 @@ p.merch_description {
   h2 {
     padding: 0 14%;
   }
+
   .btn_primary {
     display: flex;
   }
@@ -235,6 +241,10 @@ footer a,
 .footer_link,
 .email {
   font-family: 'Manege Demo';
+}
+
+.join_us .h2_and_rays {
+  margin-right: 25%;
 }
 
 @media (min-width:300px) and (max-width:375px) {
@@ -369,5 +379,14 @@ footer a,
   }
   .join_us .btn_primary.mobile img{
     width: 30px;
+  }
+  .join_us .h2_and_rays {
+    margin-right: 0;
+  }
+  .opportunities button.btn_primary {
+    margin: 0 auto;
+  }
+  .create_event button.btn_primary {
+    margin: 0 auto;
   }
 }
