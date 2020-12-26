@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  mount Ckeditor::Engine => '/ckeditor'
+  resources :categories
+  devise_for :users
   resources :posts do
   resources :comments
   end
@@ -7,7 +10,7 @@ Rails.application.routes.draw do
 
 
   get 'posts/index'
-  root 'posts#index'
+  root 'promo#index'
 
   get 'promo', to: 'promo#index'
   get 'about', to: 'about#index'

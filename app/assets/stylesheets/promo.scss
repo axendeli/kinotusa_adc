@@ -1,315 +1,373 @@
-// Place all the styles related to the Promo controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: https://sass-lang.com/
 body {
-  background:#111111!important;
-  color: white!important;
+  background: var(--black);
+  color: white;
 }
 header {
   color: white;
-  border-bottom: solid white 5px;
 }
 
+h1 {
+  font-family: 'Manege Demo';
+  font-size: 130px;
+  text-align: center;
+  margin: 0;
+    font-weight: 300;
+}
+h2 {
+  padding-left: 10%;
+  font-size: 100px;
+  line-height: 100%;
+  font-family: 'Manege Demo';
+  font-weight: 300;
+}
 .first_screen_promo {
-  display: grid;
-  grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr;
-  grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
-  gap: 0px 0px;
-  grid-template-areas:
-    "first_section_headings first_section_headings first_section_headings first_section_headings first_section_headings first_section_headings first_section_headings first_section_headings"
-    "event_card event_card event_card_second event_card_second . . . ."
-    "event_card event_card event_card_second event_card_second . . . ."
-    "event_card event_card event_card_second event_card_second . . . ."
-    "event_card event_card event_card_second event_card_second subscribe_input subscribe_input subscribe_input subscribe_input";
-  margin-top: 40px;
+  align-items: center;
+  flex-direction: column;
+  height: 84vh;
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-around;
 }
-.first_section_headings {
-   grid-area: first_section_headings;
-   padding: 20px 20px;
-   display: flex;
-   justify-content: space-between;
-   align-items: flex-end;
-   flex-direction: row;
-   border-bottom: 5px solid white;
+.first_section_h1_rays {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.first_section_headings h2 {
-  line-height: 70px;
+.first_screen_promo button.btn_primary {
+  display: flex;
+}
+.btn_primary_mobile {
+  display: none;
 }
 .first_section_headings span {
   font-size: 24px;
   line-height: 120%;
   letter-spacing: 0.005em;
 }
-.event_card {
-   grid-area: event_card;
-}
-.event_card_second {
-  grid-area: event_card_second;
-}
-.subscribe_input {
-  grid-area: subscribe_input;
-}
-span.subscribe_lable {
-  margin-left: 260px;
-  margin-bottom: 20px;
-}
-input#subscriber_email {
-  height: 100px;
-  width: 80%;
-  padding-left: 20px;
-  border-radius: 0;
-  border: none;
-  position: relative;
-  font-family: 'PT Mono';
-  font-size: 20px;
-}
-input[type="submit"] {
-  background: none;
-  border: none;
-}
-form#new_subscriber {
-  width: 100%;
-  border-top: var(--bold-border);
-  margin-top: 20px;
-}
-.new_subscriber {
-  position: relative;
-}
-.new_subscriber::before {
-  content: url("arrow_inp.svg");
-  position: absolute;
-  height: 30px;
-  width: 50px;
-  left: 560px;
-  top: 12px;
-}
-.sections_wrapper {
+.do_not_miss_party_images {
+  align-items: center;
+  justify-content: center;
   display: flex;
-  flex-direction: column;
-  width: 90%;
-  margin: 0 auto;
+  margin-top: 6%;
+  flex-direction: row;
 }
-section.first_screen_promo,
-section.find_event,
-section.create_event {
-  height: 84vh;
-  width: 100%;
-  border: 5px solid white;
-  margin-bottom: 56px;
+.do_not_miss_party_images img {
+  width: 28%;
 }
-.event_card,
-.event_card_second {
-  h3 {
-   font-family: 'NEXT ART';
-   font-weight: bold;
-   letter-spacing: 0.05em;
-   font-size: 20px;
-   line-height: 120%;
-  }
-  .time {
-     border-left: 5px solid white;
-  }
+// .subscribe_input {
+//   grid-area: subscribe_input;
+// }
+// span.subscribe_lable {
+//   margin-left: 260px;
+//   margin-bottom: 20px;
+// }
+// input#subscriber_email {
+//   height: 100px;
+//   width: 80%;
+//   padding-left: 20px;
+//   border-radius: 0;
+//   border: none;
+//   position: relative;
+//   font-family: 'SuisseIntl-Regular';
+//   font-size: 20px;
+// }
+// input[type="submit"] {
+//   background: none;
+//   border: none;
+// }
+// form#new_subscriber {
+//   width: 100%;
+//
+//   margin-top: 20px;
+// }
+// .new_subscriber {
+//   position: relative;
+// }
+// .new_subscriber::before {
+//   content: url("arrow_inp.svg");
+//   position: absolute;
+//   height: 30px;
+//   width: 50px;
+//   left: 560px;
+//   top: 12px;
+// }
+.do_not_miss_party,
+.create_event,
+.get_emotions,
+.opportunities,
+.join_us,
+.jump_into_cinema {
+  margin-top: 10%;
 }
-.event_card,
-.event_card_second {
-   h3,
-  .date,
-  .time,
-  .place,
-  .organizator {
-    border-bottom: 5px solid white;
-    padding: 12px;
-  }
-}
-.empty {
-  width: 100%;
-  border-right: 5px solid white;
-  border-top: 5px solid white;
-  margin-top: auto;
-}
-.event_card_second .organizator {
-  border-bottom: none;
-}
-.date_and_time {
-  display: flex;
-  justify-content: space-between;
-  align-items: stretch;
-}
-.time,
-.date {
-  flex: 1;
-}
-.event_card,
-.event_card_second {
-  border-right: 5px solid white;
-  display: flex;
-  flex-direction: column;
-}
-.find_event {
-  display: grid;
-  grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr;
-  grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
-  gap: 0px 0px;
-  grid-template-areas:
-    "find_event_h1_and_description find_event_h1_and_description find_event_h1_and_description find_event_h1_and_description find_event_h1_and_description event_page_photo event_page_photo event_page_photo event_page_photo event_page_photo"
-    "find_event_h1_and_description find_event_h1_and_description find_event_h1_and_description find_event_h1_and_description find_event_h1_and_description event_page_photo event_page_photo event_page_photo event_page_photo event_page_photo"
-    "find_event_h1_and_description find_event_h1_and_description find_event_h1_and_description find_event_h1_and_description find_event_h1_and_description event_page_photo event_page_photo event_page_photo event_page_photo event_page_photo"
-    "find_event_h1_and_description find_event_h1_and_description find_event_h1_and_description find_event_h1_and_description find_event_h1_and_description find_event_heading find_event_heading find_event_heading find_event_actions find_event_actions"
-    "find_event_h1_and_description find_event_h1_and_description find_event_h1_and_description find_event_h1_and_description find_event_h1_and_description find_event_description find_event_description find_event_description find_event_date_time_place find_event_date_time_place";
-}
-.event_page_photo {
-  grid-area: event_page_photo;
-}
-
-.find_event_heading {
-  grid-area: find_event_heading;
-}
-
-.find_event_actions {
-  grid-area: find_event_actions;
-}
-
-.find_event_description {
-  grid-area: find_event_description;
-  padding: 20px;
-  font-weight: regular;
-  margin-top: -40px;
-}
-
-.find_event_actions,
-.find_event_date_time_place,
-.find_event h2 {
-    padding: 20px 0 0 20px;
-}
-.find_event_date_time_place {
-  grid-area: find_event_date_time_place;
-  padding: 20px 0 0 20px;
-    margin-top: -40px;
-}
-.find_event_h1_and_description {
-  grid-area: find_event_h1_and_description;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  border-right: var(--bold-border);
-  font-weight: regular;
-}
-.event_page_photo {
-  overflow: hidden;
-}
-.find_event_heading {
-  font-size: 28px;
-  font-family: 'NEXT ART';
-  font-weight: bold;
-  letter-spacing: 0.03em;
-  line-height: 120%;
-  border-bottom: var(--bold-border);
-  height: 80px;
-  padding: 20px 0 0 20px;
-}
-.find_event_h1_and_description span,
-.event_creation_heading_and_description span {
-  padding-left: 20px;
-  padding-bottom: 20px;
-  font-size: 20px;
-  line-height: 120%;
-}
-.event_creation_heading_and_description span {
-  padding-left: 0;
-}
-.find_event_heading,
-.find_event_description {
-   border-right: var(--bold-border);
-}
-.find_event_actions {
-  .btn_primary {
-    border: 3px solid white;
-    padding: 9px 16px 5px;
-    max-height: 40px;
-    border-radius: 20px;
+.do_not_miss_party,
+.create_event,
+.get_emotions,
+.opportunities,
+.join_us,
+.jump_into_cinema {
+  p {
+    margin-left: 56%;
+    width: 40%;
+    font-size: 26px;
+    letter-spacing: 0.02em;
+    line-height: 120%;
+    font-family: 'Suisse Intl';
+    font-weight: normal;
     text-transform: uppercase;
-    width: auto;
-    border-bottom: var(--bold-border);
   }
 }
-.find_event_actions {
+p.merch_description {
+  text-align: center;
   display: flex;
+  margin: 0 auto;
+  padding-top: 2%;
+}
+.create_event button.btn_primary {
+  margin-top: 8%;
+}
+.jump_into_cinema {
+  position: relative;
+  margin-top: 30%;
+}
+.jump_into_cinema img {
+  position: absolute;
+  top: 20px;
+}
+.jump_into_cinema img {
+  top: 20px;
+  left: 25%;
+  z-index: -1;
+  top: -200px;
+}
+.jump_into_cinema div.rays_svg img {
+  z-index: 1;
+  left: 870px;
+}
+.friends_logos {
+  display: flex;
+  width: 80%;
   justify-content: space-around;
   align-items: center;
-  padding: 20px;
-  height: 60px;
-  border-bottom: var(--bold-border);
+  margin: 8% auto;
 }
-.create_event {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  gap: 0px 0px;
-  grid-template-areas:
-    "event_creation_illustration event_creation_heading_and_description";
+.opportunities .btn_primary {
+  margin-top: 8%;
 }
-.event_creation_illustration {
-  grid-area: event_creation_illustration;
-  border-right: var(--bold-border);
-  position: relative;
-  max-width: 100%;
-}
-.event_creation_heading_and_description {
-  grid-area: event_creation_heading_and_description;
-  padding: 20px 0 0 20px;
+.events,
+.event1,
+.event2,
+.event3 {
   display: flex;
-  justify-content: space-between;
+}
+.events {
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  width: 90%;
+  align-self: center;
+  margin: 0 auto;
+}
+.event1,
+.event2,
+.event3 {
+  display: flex;
   flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
 }
-.find_event .place {
+.event_description,
+.event_date {
+  text-align: center;
+  align-self: center;
+  width: 100%;
+}
+.event_description {
+  width: 80%;
+  margin-top: 4%;
+  font-size: 19px;
+  text-transform: uppercase;
+  line-height: 120%;
+}
+.event_date {
+  font-size: 19px;
+  margin-top: 8%;
+  text-transform: uppercase;
+}
+.speaker_name {
+  font-family: 'Manege Demo';
+}
+.join_us {
+  text-align: center;
   display: flex;
-}
-.event_page_date_and_time {
-  padding-top: 16px;
-}
-.event_page_date_and_time {
-  padding-top: 16px;
-}
-.find_event {
-  .place span,
-  .date span {
-    padding-left: 8px;
+  align-items: center;
+  justify-content: space-between;
+  h2 {
+    padding-left: 0;
   }
 }
-.steps_img {
-  margin: 0 auto;
-  padding-top: 60px;
-  display: flex;
+.join_us {
+  flex-direction: column;
   justify-content: center;
-  transform: scale(0.9);
-}
-.crop_img {
-  padding: 48px 20px 20px 72px;
-}
-.downloaded_img {
-  left: 60px;
-  position: absolute;
-  top: 140px;
-  z-index: -1;
-}
-.input_date {
-  padding-top: 48px;
-  transform: scale(0.9);
-}
-.name_and_geners_wrapper,
-.date_and_img_wrapper {
   display: flex;
+  align-content: center;
+  img {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    transform: scale(1.6);
+  }
+  h2 {
+    padding: 0 14%;
+  }
+  .btn_primary {
+    display: flex;
+  }
 }
-.date_and_img_wrapper {
-  padding-top: 40px;
+.h2_and_rays {
+  display: flex;
+  flex-direction:row;
+  align-self: center;
 }
-.input_name {
-  transform: scale(0.8);
-  padding-top: 40px;
+footer a,
+.footer_link,
+.email {
+  font-family: 'Manege Demo';
 }
-.name_and_geners_wrapper {
-  padding: 20px 20px 0 40px;
-}
-.event_page_date_and_time .date {
-  padding-left: 12px;
+
+@media (min-width:300px) and (max-width:375px) {
+  h1 {
+    font-size: 13vw;
+    max-width: 90vw;
+    text-align: center;
+    margin-top: 14%;
+    margin-bottom: 8%;
+  }
+  .first_screen_promo {
+    padding-top: 0;
+    height: 100vh;
+    margin-top: 20px;
+  }
+  .first_section_h1_rays {
+    flex-direction: column;
+  }
+  .first_section_h1_rays img {
+    width: 50%;
+  }
+  .first_screen_promo button.btn_primary {
+    display: none;
+  }
+  button.btn_primary.mobile {
+    display: flex;
+    margin-bottom: 14%;
+    align-items: center;
+  }
+  button.btn_primary {
+    display: flex;
+    margin-bottom: 14%;
+    align-items: center;
+    padding: 14px 20px 14px;
+    margin: 0 auto;
+  }
+  .header_actions div:not(:last-child),
+  .header_actions a {
+    margin-right: 0;
+  }
+
+  //--------------NEXT SECTIONS----------------
+
+  h2 {
+    font-size: 250%;
+    padding-left: 8%;
+  }
+  .do_not_miss_party p,
+  .create_event p,
+  .get_emotions p,
+  .opportunities p,
+  .join_us p,
+  .jump_into_cinema p {
+    margin-left: 20%;
+    width: 74%;
+    font-size: 100%;
+  }
+  .do_not_miss_party,
+  .create_event,
+  .get_emotions,
+  .opportunities,
+  .join_us,
+  .jump_into_cinema {
+    margin-top: 40%;
+  }
+  .do_not_miss_party img:last-child {
+    display: none;
+  }
+  .do_not_miss_party img {
+    width: 60%;
+  }
+  .do_not_miss_party_images {
+    margin-top: 20%;
+  }
+  .get_emotions img {
+    width: 270%;
+    margin-left: -120%;
+  }
+  p.merch_description {
+    margin-left: 0;
+    margin: 0 auto;
+  }
+  section.jump_into_cinema {
+    margin-top: 120%;
+  }
+  .jump_into_cinema img {
+    width: 68%;
+    top: -330px;
+  }
+  .jump_into_cinema div.rays_svg img {
+    z-index: 1;
+    width: 30%;
+    left: 60%;
+  }
+  div .friends_logos {
+    flex-wrap: wrap;
+    height: 70vh;
+  }
+  div .friends_logos img {
+    width: 37%;
+  }
+  .events {
+    flex-direction: column;
+    height: 170vh;
+  }
+  .event1,
+  .event2,
+  .event3,
+  .event4 {
+    img {
+      width: 80%;
+    }
+  }
+   .h2_and_rays {
+    flex-direction: column;
+    align-items: center;
+  }
+   .h2_and_rays h2 {
+    margin: 10%;
+  }
+   .join_us img {
+    width: 50%;
+    transform: none;
+  }
+  .join_us .btn_primary {
+    display: none;
+  }
+  .join_us .btn_primary.mobile {
+    display: flex;
+    width: 76%;
+    justify-content: space-between;
+  }
+  .join_us .btn_primary.mobile img{
+    width: 30px;
+  }
 }
