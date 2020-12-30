@@ -8,11 +8,13 @@ Rails.application.routes.draw do
   get 'about/index'
   get 'promo/index'
 
+
   get 'posts/index'
   root 'promo#index'
 
   get 'promo', to: 'promo#index'
   get 'about', to: 'about#index'
+
 
 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
