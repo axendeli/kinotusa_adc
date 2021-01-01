@@ -25,7 +25,6 @@ html {
 }
 body {
   font-family: "Suisse Intl";
-  background-color: var(--black);
   overflow-x: hidden;
 }
 a {
@@ -37,7 +36,6 @@ a:visited {
 }
 header {
   position: fixed;
-  width: 90%;
   height: 4vw;
   font-family: 'Suisse Intl';
   font-style: normal;
@@ -251,5 +249,13 @@ footer {
   header .header_actions div.separator {
     display: none;
   }
-
+  .footer_top {
+    flex-direction: column;
+  }
+  .footer_top .service_name{
+    display: none;
+  }
+  .footer_text a.footer_link {
+    padding-top: 4%;
+  }
 }
