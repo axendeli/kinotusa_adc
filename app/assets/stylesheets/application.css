@@ -56,6 +56,10 @@ header .header_actions {
   flex-direction: row;
   font-family: 'Suisse Intl';
 }
+.header_wrapper {
+  display: flex;
+  width: 100%;
+}
 .header_actions div:not(:last-child),
 .header_actions a {
   margin-right: 4%;
