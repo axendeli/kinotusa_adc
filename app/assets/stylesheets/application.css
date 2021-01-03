@@ -37,6 +37,7 @@ a:visited {
 header {
   position: fixed;
   height: 4vw;
+  width: 100%;
   font-family: 'Suisse Intl';
   font-style: normal;
   font-weight: 400;
@@ -55,20 +56,34 @@ header .header_actions {
   align-items: center;
   flex-direction: row;
   font-family: 'Suisse Intl';
+  justify-content: space-between;
+}
+nav.menu {
+  width: 44%;
+  padding-right: 5%;
 }
 .header_wrapper {
   display: flex;
   width: 100%;
+  justify-content: space-between;
 }
-.header_actions div:not(:last-child),
+/* .header_actions div:not(:last-child),
 .header_actions a {
   margin-right: 4%;
-}
+} */
 header a {
   white-space: nowrap;
 }
 .logo {
   padding-left: 5%;
+  display: flex;
+}
+.log_in_Log_out {
+  align-content: space-between;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  width: 34%;
 }
 .header_actions div.separator {
   margin: 0 1%;
@@ -81,11 +96,12 @@ header a {
 .btn_primary {
   border: 1px solid white;
   border-radius: 30px;
-  padding: 8px 12px 6px;
+  padding: 10px 14px 8px;
   letter-spacing: 0.02em;
   font-family: 'Suisse Intl';
   background-color: var(--black);
   color: white;
+  font-size: 16px;
   text-transform: uppercase;
   white-space: nowrap;
   width: fit-content;
@@ -97,7 +113,6 @@ header button.btn_primary {
   border: 2px solid white;
   border-radius: 20px;
   background-color: var(--grayDark);
-  margin-right: 4%;
   width: fit-content;
 }
 
@@ -165,9 +180,6 @@ footer {
   align-items: center;
   text-align: center;
   margin-top: 10%;
-}
- .service_name {
-   margin-top: 10%;
 }
 .contact_us {
   padding-left: 5%;
@@ -252,6 +264,9 @@ footer {
   }
   header .header_actions div.separator {
     display: none;
+  }
+  .service_name {
+    margin-top: 10%;
   }
   .footer_top {
     flex-direction: column;

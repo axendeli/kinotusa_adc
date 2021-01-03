@@ -32,6 +32,24 @@ h2 {
   align-items: center;
   justify-content: space-between;
 }
+.first_section_h1_rays img {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  animation: rotating 6s infinite linear;
+}
+@keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
 .first_screen_promo button.btn_primary {
   display: flex;
 }
