@@ -20,6 +20,9 @@
 :root {
   --black: #0F0F0F;
 }
+:root {
+  --lightGray: #F3F3F3;
+}
 html {
   overflow-x: hidden;
 }

@@ -19,7 +19,11 @@
       <body>
         <header>
           <div class="header_wrapper">
-            <div class="logo"><%= image_tag("logo.svg") %></div>
+
+            <div class="logo">
+                <%= link_to 'posts', posts_path %>
+              <%= image_tag("logo.svg") %>
+            </div>
             <div class="burger"></div>
             <nav class="menu">
               <div class="header_actions">
