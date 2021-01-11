@@ -1,0 +1,475 @@
+/* line 1, app/assets/stylesheets/promo.scss */
+body {
+  background: var(--black);
+  color: white;
+}
+
+/* line 5, app/assets/stylesheets/promo.scss */
+header {
+  color: white;
+}
+
+/* line 8, app/assets/stylesheets/promo.scss */
+h1 {
+  font-family: 'Manege Demo';
+  font-size: 130px;
+  text-align: center;
+  margin: 0;
+  font-weight: 300;
+}
+
+/* line 15, app/assets/stylesheets/promo.scss */
+h2 {
+  padding-left: 10%;
+  font-size: 100px;
+  line-height: 100%;
+  font-family: 'Manege Demo';
+  font-weight: 300;
+}
+
+/* line 22, app/assets/stylesheets/promo.scss */
+.first_screen_promo {
+  align-items: center;
+  flex-direction: column;
+  height: 84vh;
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* line 30, app/assets/stylesheets/promo.scss */
+.first_section_h1_rays {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* line 35, app/assets/stylesheets/promo.scss */
+.first_section_h1_rays img {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  animation: rotating 6s infinite linear;
+}
+
+@keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+/* line 53, app/assets/stylesheets/promo.scss */
+.first_screen_promo button.btn_primary {
+  display: flex;
+}
+
+/* line 56, app/assets/stylesheets/promo.scss */
+button.btn_primary.mobile {
+  display: none;
+}
+
+/* line 59, app/assets/stylesheets/promo.scss */
+.first_section_headings span {
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: 0.005em;
+}
+
+/* line 64, app/assets/stylesheets/promo.scss */
+.do_not_miss_party_images {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-top: 6%;
+  flex-direction: row;
+}
+
+/* line 71, app/assets/stylesheets/promo.scss */
+.do_not_miss_party_images img {
+  width: 28%;
+}
+
+/* line 111, app/assets/stylesheets/promo.scss */
+.do_not_miss_party,
+.create_event,
+.get_emotions,
+.opportunities,
+.join_us,
+.jump_into_cinema {
+  margin-top: 10%;
+}
+
+/* line 125, app/assets/stylesheets/promo.scss */
+.do_not_miss_party p,
+.create_event p,
+.get_emotions p,
+.opportunities p,
+.join_us p,
+.jump_into_cinema p {
+  margin-left: 56%;
+  width: 40%;
+  font-size: 26px;
+  letter-spacing: 0.02em;
+  line-height: 120%;
+  font-family: 'Suisse Intl';
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+/* line 136, app/assets/stylesheets/promo.scss */
+p.merch_description {
+  text-align: center;
+  display: flex;
+  margin: 0 auto;
+  padding-top: 2%;
+}
+
+/* line 142, app/assets/stylesheets/promo.scss */
+.create_event button.btn_primary {
+  margin-top: 8%;
+  margin-left: 40%;
+}
+
+/* line 146, app/assets/stylesheets/promo.scss */
+.opportunities button.btn_primary {
+  margin-top: 8%;
+  margin-left: 43%;
+}
+
+/* line 150, app/assets/stylesheets/promo.scss */
+.jump_into_cinema {
+  position: relative;
+  margin-top: 30%;
+}
+
+/* line 154, app/assets/stylesheets/promo.scss */
+.jump_into_cinema img {
+  position: absolute;
+  top: 20px;
+}
+
+/* line 158, app/assets/stylesheets/promo.scss */
+.jump_into_cinema img {
+  top: 20px;
+  left: 25%;
+  z-index: -1;
+  top: -200px;
+}
+
+/* line 164, app/assets/stylesheets/promo.scss */
+.jump_into_cinema div.rays_svg img {
+  z-index: 1;
+  left: 870px;
+}
+
+/* line 168, app/assets/stylesheets/promo.scss */
+.friends_logos {
+  display: flex;
+  width: 80%;
+  justify-content: space-around;
+  align-items: center;
+  margin: 8% auto;
+}
+
+/* line 175, app/assets/stylesheets/promo.scss */
+.opportunities .btn_primary {
+  margin-top: 8%;
+}
+
+/* line 178, app/assets/stylesheets/promo.scss */
+.events,
+.event1,
+.event2,
+.event3 {
+  display: flex;
+}
+
+/* line 184, app/assets/stylesheets/promo.scss */
+.events {
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  width: 90%;
+  align-self: center;
+  margin: 0 auto;
+}
+
+/* line 192, app/assets/stylesheets/promo.scss */
+.event1,
+.event2,
+.event3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+/* line 201, app/assets/stylesheets/promo.scss */
+.event_description,
+.event_date {
+  text-align: center;
+  align-self: center;
+  width: 100%;
+}
+
+/* line 207, app/assets/stylesheets/promo.scss */
+.event_description {
+  width: 80%;
+  margin-top: 4%;
+  font-size: 19px;
+  text-transform: uppercase;
+  line-height: 120%;
+}
+
+/* line 214, app/assets/stylesheets/promo.scss */
+.event_date {
+  font-size: 19px;
+  margin-top: 8%;
+  text-transform: uppercase;
+}
+
+/* line 219, app/assets/stylesheets/promo.scss */
+.speaker_name {
+  font-family: 'Manege Demo';
+}
+
+/* line 222, app/assets/stylesheets/promo.scss */
+.join_us {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* line 227, app/assets/stylesheets/promo.scss */
+.join_us h2 {
+  padding-left: 0;
+}
+
+/* line 231, app/assets/stylesheets/promo.scss */
+.join_us {
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+  align-content: center;
+}
+
+/* line 236, app/assets/stylesheets/promo.scss */
+.join_us img {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  transform: scale(1.6);
+}
+
+/* line 244, app/assets/stylesheets/promo.scss */
+.join_us h2 {
+  padding: 0 14%;
+}
+
+/* line 248, app/assets/stylesheets/promo.scss */
+.join_us .btn_primary {
+  display: flex;
+}
+
+/* line 252, app/assets/stylesheets/promo.scss */
+.h2_and_rays {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+}
+
+/* line 257, app/assets/stylesheets/promo.scss */
+footer a,
+.footer_link,
+.email {
+  font-family: 'Manege Demo';
+}
+
+/* line 263, app/assets/stylesheets/promo.scss */
+.join_us .h2_and_rays {
+  margin-right: 25%;
+}
+
+@media (min-width: 300px) and (max-width: 375px) {
+  /* line 268, app/assets/stylesheets/promo.scss */
+  h1 {
+    font-size: 13vw;
+    max-width: 90vw;
+    text-align: center;
+    margin-top: 14%;
+    margin-bottom: 8%;
+  }
+  /* line 275, app/assets/stylesheets/promo.scss */
+  .first_screen_promo {
+    padding-top: 0;
+    height: 100vh;
+    margin-top: 20px;
+  }
+  /* line 280, app/assets/stylesheets/promo.scss */
+  .first_section_h1_rays {
+    flex-direction: column;
+  }
+  /* line 283, app/assets/stylesheets/promo.scss */
+  .first_section_h1_rays img {
+    width: 50%;
+  }
+  /* line 286, app/assets/stylesheets/promo.scss */
+  .first_screen_promo button.btn_primary {
+    display: none;
+  }
+  /* line 289, app/assets/stylesheets/promo.scss */
+  button.btn_primary.mobile {
+    display: flex;
+    margin-bottom: 14%;
+    align-items: center;
+  }
+  /* line 294, app/assets/stylesheets/promo.scss */
+  button.btn_primary {
+    display: flex;
+    margin-bottom: 14%;
+    align-items: center;
+    padding: 14px 20px 14px;
+    margin: 0 auto;
+  }
+  /* line 301, app/assets/stylesheets/promo.scss */
+  .header_actions div:not(:last-child),
+.header_actions a {
+    margin-right: 0;
+  }
+  /* line 308, app/assets/stylesheets/promo.scss */
+  h2 {
+    font-size: 250%;
+    padding-left: 8%;
+  }
+  /* line 312, app/assets/stylesheets/promo.scss */
+  .do_not_miss_party p,
+.create_event p,
+.get_emotions p,
+.opportunities p,
+.join_us p,
+.jump_into_cinema p {
+    margin-left: 20%;
+    width: 74%;
+    font-size: 100%;
+  }
+  /* line 322, app/assets/stylesheets/promo.scss */
+  .do_not_miss_party,
+.create_event,
+.get_emotions,
+.opportunities,
+.join_us,
+.jump_into_cinema {
+    margin-top: 40%;
+  }
+  /* line 330, app/assets/stylesheets/promo.scss */
+  .do_not_miss_party img:last-child {
+    display: none;
+  }
+  /* line 333, app/assets/stylesheets/promo.scss */
+  .do_not_miss_party img {
+    width: 60%;
+  }
+  /* line 336, app/assets/stylesheets/promo.scss */
+  .do_not_miss_party_images {
+    margin-top: 20%;
+  }
+  /* line 339, app/assets/stylesheets/promo.scss */
+  .get_emotions img {
+    width: 270%;
+    margin-left: -120%;
+  }
+  /* line 343, app/assets/stylesheets/promo.scss */
+  p.merch_description {
+    margin-left: 0;
+    margin: 0 auto;
+  }
+  /* line 347, app/assets/stylesheets/promo.scss */
+  section.jump_into_cinema {
+    margin-top: 120%;
+  }
+  /* line 350, app/assets/stylesheets/promo.scss */
+  .jump_into_cinema img {
+    width: 68%;
+    top: -330px;
+  }
+  /* line 354, app/assets/stylesheets/promo.scss */
+  .jump_into_cinema div.rays_svg img {
+    z-index: 1;
+    width: 30%;
+    left: 60%;
+  }
+  /* line 359, app/assets/stylesheets/promo.scss */
+  div .friends_logos {
+    flex-wrap: wrap;
+    height: 70vh;
+  }
+  /* line 363, app/assets/stylesheets/promo.scss */
+  div .friends_logos img {
+    width: 37%;
+  }
+  /* line 366, app/assets/stylesheets/promo.scss */
+  .events {
+    flex-direction: column;
+    height: 170vh;
+  }
+  /* line 374, app/assets/stylesheets/promo.scss */
+  .event1 img,
+.event2 img,
+.event3 img,
+.event4 img {
+    width: 80%;
+  }
+  /* line 378, app/assets/stylesheets/promo.scss */
+  .h2_and_rays {
+    flex-direction: column;
+    align-items: center;
+  }
+  /* line 382, app/assets/stylesheets/promo.scss */
+  .h2_and_rays h2 {
+    margin: 10%;
+  }
+  /* line 385, app/assets/stylesheets/promo.scss */
+  .join_us img {
+    width: 50%;
+    transform: none;
+  }
+  /* line 389, app/assets/stylesheets/promo.scss */
+  .join_us .btn_primary {
+    display: none;
+  }
+  /* line 392, app/assets/stylesheets/promo.scss */
+  .join_us .btn_primary.mobile {
+    display: flex;
+    width: 76%;
+    justify-content: space-between;
+  }
+  /* line 397, app/assets/stylesheets/promo.scss */
+  .join_us .btn_primary.mobile img {
+    width: 30px;
+  }
+  /* line 400, app/assets/stylesheets/promo.scss */
+  .join_us .h2_and_rays {
+    margin-right: 0;
+  }
+  /* line 403, app/assets/stylesheets/promo.scss */
+  .opportunities button.btn_primary {
+    margin: 0 auto;
+  }
+  /* line 406, app/assets/stylesheets/promo.scss */
+  .create_event button.btn_primary {
+    margin: 0 auto;
+  }
+}
+
+/*# sourceMappingURL=promo.css-9986feb631dc334e993e431ae95110d4a3795eeaa64b6d3edfb5d9678f28a4d0.map */

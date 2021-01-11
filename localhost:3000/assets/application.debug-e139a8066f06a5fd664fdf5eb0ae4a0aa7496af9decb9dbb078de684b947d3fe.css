@@ -1,0 +1,285 @@
+@import "reset.css";
+@import url(http://db.onlinewebfonts.com/c/88f10bf18a36407ef36bf30bc25a3618?family=Suisse+Intl);
+@font-face {
+    font-family: 'Manege Demo';
+    src: url('ManegeDemo-Light.eot');
+    src: local('Manege Demo Light'), local('ManegeDemo-Light'),
+        url('ManegeDemo-Light.eot?') format('embedded-opentype'),
+        url('ManegeDemo-Light.woff2') format('woff2'),
+        url('ManegeDemo-Light.woff') format('woff'),
+        url('ManegeDemo-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {font-family: "Suisse Intl"; src: url("http://db.onlinewebfonts.com/t/88f10bf18a36407ef36bf30bc25a3618.eot"); src: url("http://db.onlinewebfonts.com/t/88f10bf18a36407ef36bf30bc25a3618.eot?") format("embedded-opentype"), url("http://db.onlinewebfonts.com/t/88f10bf18a36407ef36bf30bc25a3618.woff2") format("woff2"), url("http://db.onlinewebfonts.com/t/88f10bf18a36407ef36bf30bc25a3618.woff") format("woff"), url("http://db.onlinewebfonts.com/t/88f10bf18a36407ef36bf30bc25a3618.ttf") format("truetype"), url("http://db.onlinewebfonts.com/t/88f10bf18a36407ef36bf30bc25a3618.svg") format("svg");
+}
+
+:root {
+  --grayDark: #1E1E1E;
+}
+:root {
+  --black: #0F0F0F;
+}
+:root {
+  --lightGray: #F3F3F3;
+}
+html {
+  overflow-x: hidden;
+}
+body {
+  font-family: "Suisse Intl";
+  overflow-x: hidden;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+a:visited {
+  color: white;
+}
+header {
+  position: fixed;
+  height: 4vw;
+  width: 100%;
+  font-family: 'Suisse Intl';
+  font-style: normal;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: var(--grayDark);
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  z-index: 3;
+}
+header .header_actions {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  font-family: 'Suisse Intl';
+  justify-content: space-between;
+}
+nav.menu {
+  width: 44%;
+  padding-right: 5%;
+}
+.header_wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+/* .header_actions div:not(:last-child),
+.header_actions a {
+  margin-right: 4%;
+} */
+header a {
+  white-space: nowrap;
+}
+.logo {
+  padding-left: 5%;
+  display: flex;
+}
+.log_in_Log_out {
+  align-content: space-between;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  width: 34%;
+}
+.header_actions div.separator {
+  margin: 0 1%;
+  height: 3px;
+  width: 2em;
+  background-color: white;
+  transform: rotate(-45deg);
+  margin-right: 0;
+}
+.btn_primary {
+  border: 1px solid white;
+  border-radius: 30px;
+  padding: 10px 14px 8px;
+  letter-spacing: 0.02em;
+  font-family: 'Suisse Intl';
+  background-color: var(--black);
+  color: white;
+  font-size: 16px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  width: fit-content;
+}
+.btn_primary img {
+  padding: 1% 4% 1%;
+}
+header button.btn_primary {
+  border: 2px solid white;
+  border-radius: 20px;
+  background-color: var(--grayDark);
+  width: fit-content;
+}
+
+
+/* -----------------BURGER MENU---------------------- */
+
+.burger {
+  visibility: hidden;
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+.burger:hover {
+  cursor: pointer;
+}
+.burger::after,
+.burger::before {
+  position: absolute;
+  background-color: white;
+  content: '';
+  width: 24px;
+  height: 2px;
+  transition: all .3s ease;
+}
+.burger::before {
+  top: 6px;
+}
+.burger::after {
+  top: 18px;
+}
+.burger-open::before {
+  background: white;
+  transform: rotate(45deg) translate(5px, 4px);
+}
+.burger-open::after {
+  background: white;
+  transform: rotate(-45deg) translate(4px, -4px);
+}
+/* .menu-open ul {
+  z-index: 1;
+  width: 76%;
+  font-size: 7vw;
+  line-height: 0.9;
+  margin-bottom: 5vw;
+}
+.menu-open ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+.menu-open ul li a:hover {
+  cursor: pointer;
+  z-index: 5;
+} */
+
+
+footer {
+  height: 40vh;
+  flex-direction: column;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 56px 0;
+  background-color: var(--grayDark);
+  align-items: center;
+  text-align: center;
+  margin-top: 10%;
+}
+.contact_us {
+  padding-left: 5%;
+}
+.social {
+  padding-top: 20px;
+  display: flex;
+}
+.social img:not(:last-child) {
+  padding-right: 20px;
+}
+.footer_top {
+  display: flex;
+  width: 70%;
+  align-self: center;
+  align-items: center;
+  justify-content: space-between;
+}
+.top_menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  margin-bottom: 40px;
+  background: #eee;
+  border-bottom: 1px solid #ddd;
+}
+.footer_contacts {
+  display: flex;
+  flex-direction: column;
+}
+.footer_text {
+  padding-bottom: 4%;
+}
+.top_menu a {
+  margin: 0 20px;
+}
+
+
+@media (min-width:300px) and (max-width:375px) {
+  header {
+    height: 6vh;
+  }
+  .burger {
+    visibility: visible;
+    margin-left: 42%;
+  }
+  .burger-open {
+    margin-right: 8%;
+  }
+  .menu {
+    visibility: hidden;
+  }
+  .menu-open {
+    visibility: hidden;
+    position: fixed;
+    margin-top: 6vh;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    z-index: 2;
+    visibility: visible;
+    background-color: var(--grayDark);
+    height: 100vh;
+    justify-content: center;
+  }
+  header .header_actions {
+    justify-content: space-between;
+    height: 30vh;
+    align-items: center;
+  }
+  header .header_actions {
+    flex-direction: column;
+  }
+  header .header_actions div.separator_wrapper {
+    display: none;
+  }
+  header .header_actions div.separator {
+    display: none;
+  }
+  .service_name {
+    margin-top: 10%;
+  }
+  .footer_top {
+    flex-direction: column;
+  }
+  .footer_top .service_name{
+    display: none;
+  }
+  .footer_text a.footer_link {
+    padding-top: 4%;
+  }
+}
+
+/*# sourceMappingURL=application.css-cd4827daa64fa588de1050a5bf8a154223cfcf71feee3b779a5cc79ffa66557f.map */

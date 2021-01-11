@@ -1,20 +1,36 @@
-    <%= stylesheet_link_tag 'promo', media: 'all', 'data-turbolinks-track': 'reload' %>
+<!DOCTYPE html>
+    <html>
+      <head>
+        <title>kinochestvo</title>
+        <meta name="csrf-param">
+        <meta charset="utf-8"> content="authenticity_token" />
+<meta name="csrf-token" content="XAOmLdDhFXW5nK/CjLBXIRzyfAPqCyyUOjB2f4P4j/or95cLnACuu32aGZPEg0fhRthAiwktvGmuDRt1M8BdDw==" />
+
+
+
+
+        <link rel="stylesheet" media="all" href="assets/application.debug-e139a8066f06a5fd664fdf5eb0ae4a0aa7496af9decb9dbb078de684b947d3fe.css" data-turbolinks-track="reload" />
+        <script src="packs/js/application-c7a80b42f5647cd7828d.js" data-turbolinks-track="reload"></script>
+        <script src="http://cdn.ckeditor.com/4.11.3/standard/ckeditor.js"></script>
+      </head>
+
+
+      <body>
+            <link rel="stylesheet" media="all" href="assets/promo.debug-2c97fd89aa563e66917b8e922a98bbd478c89d85a6a0032ce421ad8011ae731a.css" data-turbolinks-track="reload" />
 
     <!DOCTYPE html>
     <html>
       <head>
         <title>Kinotusovka</title>
-        
+
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <%= csrf_meta_tags %>
-        <%= csp_meta_tag %>
-        <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-        <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-        <% if notice %>
-          <%= notice %>
-        <% end %>
-        <link href="//db.onlinewebfonts.com/c/88f10bf18a36407ef36bf30bc25a3618?family=Suisse+Intl" rel="stylesheet" type="text/css"/>
+        <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="aANoXsZ1LjdLhx37aNl077XoiDXl7c042dXu8uCzzJ0f91l4ipSV+Y+Bq6og6mQv78K0vQbLXcVN6IP4UIseaA==" />
+
+        <link rel="stylesheet" media="all" href="assets/application.debug-e139a8066f06a5fd664fdf5eb0ae4a0aa7496af9decb9dbb078de684b947d3fe.css" data-turbolinks-track="reload" />
+        <script src="packs/js/application-c7a80b42f5647cd7828d.js" data-turbolinks-track="reload"></script>
+        <link href="http://db.onlinewebfonts.com/c/88f10bf18a36407ef36bf30bc25a3618?family=Suisse+Intl" rel="stylesheet" type="text/css"/>
       </head>
 
       <body>
@@ -22,13 +38,13 @@
           <div class="header_wrapper">
 
             <div class="logo">
-                <%= link_to 'posts', posts_path %>
-              <%= image_tag("logo.svg") %>
+                <a href="http://localhost:3000/posts">posts</a>
+              <img src="assets/logo-8be26ce03abc4cce8b012d74e417e553f28b09e72e0f7c5744fd8264785928e2.svg" />
             </div>
             <div class="burger"></div>
             <nav class="menu">
               <div class="header_actions">
-                <%= link_to "о пpоекте", about_path %>
+                <a href="http://localhost:3000/about">о пpоекте</a>
                 <div class="log_in_Log_out">
                   <div class="">войти</div>
                   <div class="separator_wrapper">
@@ -44,17 +60,17 @@
         </header>
            <section class="first_screen_promo">
             <div class="first_section_h1_rays">
-                <%= image_tag("rays.svg") %>
+                <img src="assets/rays-6099946cd9965446dbd035a97a9d06076bcc133e0895507c43073e01ca75f518.svg" />
                 <h1>СТАНЬ ЧАСТЬЮ КИНО-СООБЩЕСТВА</h1>
                 <button class="btn_primary mobile" type="button" name="button">
                   узнать про киночество
-                  <%= image_tag("arrow_btn.svg") %>
+                  <img src="assets/arrow_btn-233f09ba40554ab5c42bd43d44595080c7259b7a35e8470921f977a1e79ebb6d.svg" />
                 </button>
-                <%= image_tag("rays.svg") %>
+                <img src="assets/rays-6099946cd9965446dbd035a97a9d06076bcc133e0895507c43073e01ca75f518.svg" />
             </div>
             <button class="btn_primary" type="button" name="button">
               узнать про киночество
-              <%= image_tag("arrow_btn.svg") %>
+              <img src="assets/arrow_btn-233f09ba40554ab5c42bd43d44595080c7259b7a35e8470921f977a1e79ebb6d.svg" />
             </button>
            </section>
 
@@ -63,14 +79,17 @@
                   <p class="do_not_miss_party_p">ищите интересные киножанры, присоединяйтесь к тусовкам и становитесь частью нового комьюнити!</p>
             <!-- <div class="subscribe_input">
                 <span class="subscribe_lable">Подпишись, чтобы не пропустить релиз проекта</span>
-                <%= render "subscribers/form" %>
-                <%= yield %>
+                <form class="new_subscriber" id="new_subscriber" action="/subscribers" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="L9rLx5+kJjs981ROVSPuEIsbgy8gpqmEqRidYHeFxy0XKaG0AMwD7h+3PHTK6rbwFUbekI5XqP/iTJ0mGRCHBw==" />
+  <input placeholder="Email" type="email" name="subscriber[email]" id="subscriber_email" />
+  <input type="submit" name="commit" value=" " data-disable-with=" " />
+</form>
+
               </div> -->
               <div class="do_not_miss_party_images">
-                <%= image_tag("events1.png") %>
-                <%= image_tag("events2.png") %>
-                <%= image_tag("events3.png") %>
-                <%= image_tag("events4.png") %>
+                <img src="assets/events1-68273578b43e981886150577d5381be125af935670e84befc8c8a60bdf6615c5.png" />
+                <img src="assets/events2-a20673f16acb223a5ef926794d365bdeede6f505acb2d6f5fb62cb932447c3c7.png" />
+                <img src="assets/events3-0f11d4e3d6fef3bd22960bd0d3fefc0af55e92c100bfee944e1f4614fb6dae26.png" />
+                <img src="assets/events4-1bcd7da1a930377b1388056fdb65254a98bc4edcdf952b6ef7d87177ad14c7b6.png" />
               </div>
            </section>
 
@@ -79,14 +98,14 @@
               <p class="">если вы — большая команда, или даже волк-одиночка, вы всегда можете стать демиургом в мире кино сходок!</p>
               <button type="button" name="button" class="btn_primary">
                      СОЗДАТЬ МЕРОПРИЯТИЕ
-                    <%= image_tag("arrow_btn.svg") %>
+                    <img src="assets/arrow_btn-233f09ba40554ab5c42bd43d44595080c7259b7a35e8470921f977a1e79ebb6d.svg" />
               </button>
            </section>
 
            <section class="get_emotions">
                  <h2>ПОЛУЧИ ЭМОЦИИ В&nbsp;ПОДАРОК</h2>
                  <p>ЗАРЕГИСТРИРУЙСЯ СЕГОДНЯ, И ПОЛУЧИ В ПОДАРОК ЭКСКЛЮЗИВный мерч для киноведов и организаторов киночества!</p>
-                 <%= image_tag("merch.png") %>
+                 <img src="assets/merch-f19ca79b570f955901623a1e785aae8e5b5e8a7947b7830a39c978b2cabd5901.png" />
                  <p class="merch_description">лимитированное издание для начинающих киноведов от опытных киноведов</p>
            </section>
 
@@ -96,9 +115,9 @@
               И ЛЕКЦИЯХ РАЗНЫХ ДЕЯТЕЛЕЙ КИНОИНДУСТРИИ
               </p>
               <div class="rays_svg">
-                <%= image_tag("rays.svg") %>
+                <img src="assets/rays-6099946cd9965446dbd035a97a9d06076bcc133e0895507c43073e01ca75f518.svg" />
               </div>
-              <%= image_tag("event_huge.png") %>
+              <img src="assets/event_huge-300ac7357fbf38b3add13f250f37c69b0ac6a6343da12ee56b498b36bf9a36de.png" />
            </section>
 
            <section class="opportunities">
@@ -107,50 +126,50 @@
               <p>Мы коллабимся с такими классными организациями: опиа, циферблат, кинофонд, мосфильм, мир кино, иное кино, искусство кино и не только!
               </p>
               <div class="friends_logos">
-                <%= image_tag("opia_logo.png") %>
-                <%= image_tag("vinz_logo.png") %>
-                <%= image_tag("inoe_logo.png") %>
-                <%= image_tag("cifer_logo.png") %>
-                <%= image_tag("moskino_logo.png") %>
-                <%= image_tag("art_kino.png") %>
+                <img src="assets/opia_logo-dba63d7409a3fe978e2fc79036d414374cd93092aab0bdc0d9641301ea072b8f.png" />
+                <img src="assets/vinz_logo-5895ace613c916c5376a14216ea4a13256990eab2908f636e58e7ce2dbd9b7a4.png" />
+                <img src="assets/inoe_logo-d738b937b32030dd2b161caf79bcf23b713a3b09ab59a8028784d75cb8a43c56.png" />
+                <img src="assets/cifer_logo-5249f585eb677d9187c40b8e909ef890e57181edb9d999c98a23351f92b0d641.png" />
+                <img src="assets/moskino_logo-8bc6326a19106a281d40b9bc387c10837c8d3771a5d44dc146ced593393ff9a9.png" />
+                <img src="assets/art_kino-db1493df71ab18f938650773fea3fc0768073a81986a9d20616ea06b66f4e191.png" />
               </div>
             </div>
               <div class="events">
                 <div class="event1">
-                  <%= image_tag("event1.png") %>
+                  <img src="assets/event1-ab31f964a15c7b1544e8cc8e71e9e14fa46a88ce36ecd8511cd9b1f956633c06.png" />
                   <span class="event_date">10 декабря</span>
                   <span class="event_description"><div class="speaker_name">Илья найшуллер</div> расскажет о брутализме<br>в сфере клипмейкинга</span>
                 </div>
                 <div class="event2">
-                  <%= image_tag("event3.png") %>
+                  <img src="assets/event3-9254973996141fcb98ec213f87685f396d0917adaef31d5efc66d101f2e07a5f.png" />
                   <span class="event_date">10 декабря</span>
                   <span class="event_description"><div class="speaker_name">Мцитуридзе Екатерина </div>о грузинском нуаре</span>
                 </div>
                 <div class="event3">
-                  <%= image_tag("event2.png") %>
+                  <img src="assets/event2-5baa3c9941f7426d9c5cf3a5918ac946f3c2a0622c37ace72b3f360dad43f4a4.png" />
                   <span class="event_date">10 декабря</span>
                   <span class="event_description"><div class="speaker_name">Олеся Меньшова</div> о своей роли в<br>«Станционном смотрителе»</span>
                 </div>
               </div>
               <button type="button" name="button" class="btn_primary">
                      СОЗДАТЬ МЕРОПРИЯТИЕ
-                    <%= image_tag("arrow_btn.svg") %>
+                    <img src="assets/arrow_btn-233f09ba40554ab5c42bd43d44595080c7259b7a35e8470921f977a1e79ebb6d.svg" />
               </button>
            </section>
 
            <section class="join_us">
              <div class="h2_and_rays">
-               <%= image_tag("rays.svg") %>
+               <img src="assets/rays-6099946cd9965446dbd035a97a9d06076bcc133e0895507c43073e01ca75f518.svg" />
                <h2>СТАНЬ ЧАСТЬЮ КИНОЧЕСТВА</h2>
                <button class="btn_primary mobile" type="button" name="button">
                  узнать про киночество
-                 <%= image_tag("arrow_btn.svg") %>
+                 <img src="assets/arrow_btn-233f09ba40554ab5c42bd43d44595080c7259b7a35e8470921f977a1e79ebb6d.svg" />
                </button>
-               <%= image_tag("rays.svg") %>
+               <img src="assets/rays-6099946cd9965446dbd035a97a9d06076bcc133e0895507c43073e01ca75f518.svg" />
              </div>
              <button type="button" name="button" class="btn_primary">
                     посетить киночество
-                   <%= image_tag("arrow_btn.svg") %>
+                   <img src="assets/arrow_btn-233f09ba40554ab5c42bd43d44595080c7259b7a35e8470921f977a1e79ebb6d.svg" />
              </button>
            </section>
 
@@ -158,13 +177,13 @@
 
            <div class="footer_top">
                <div class="logo">
-                 <%= image_tag("logo.svg") %>
+                 <img src="assets/logo-8be26ce03abc4cce8b012d74e417e553f28b09e72e0f7c5744fd8264785928e2.svg" />
                </div>
              <div class="social">
-               <%= image_tag("vk.svg") %>
-               <%= image_tag("inst.svg") %>
-               <%= image_tag("fb.svg") %>
-               <%= image_tag("tg.svg") %>
+               <img src="assets/vk-dad25b549e474182490ddc921827177ef1d683709a4bda94239c158634a0c4f3.svg" />
+               <img src="assets/inst-29e6dcca25c1f62bfaaa312461c9ac1a5a60296fe94fa54340276b0ec8b539f1.svg" />
+               <img src="assets/fb-28d6405d15ba83416867a500054b54841a5184bf57ee7650fb1bbead1287364a.svg" />
+               <img src="assets/tg-037d9354a1d66533878cd7352d4b2e45d8cbe1ae5049d068f214182544bcccb8.svg" />
              </div>
              <span class="service_name">
                © kinochestvo encrypted 2020
@@ -184,7 +203,7 @@
 
             <div class="footer_text">
               <span>И узнайте подробнее</span>
-              <a href="#">о нашем проекте</a>
+              <a href="promo#">о нашем проекте</a>
             </div>
 
             <span class="service_name_bottom">
@@ -194,4 +213,7 @@
          </footer>
 
         </body>
+    </html>
+
+      </body>
     </html>
