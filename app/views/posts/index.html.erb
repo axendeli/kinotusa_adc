@@ -3,6 +3,10 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Мероприятия</h1>
+<h2>All Categories</h2>
+<% Category.all.each do |cat| %>
+	<%= link_to cat.name, posts_path(category: cat.name) %> <br>
+<% end %>
 
 <table>
   <thead>
@@ -19,10 +23,10 @@
       <tr>
         <td><%= post.name %></td>
         <td><%= post.title %></td>
+        <td><%= post.category.name %></td>
         <td><%= post.content.html_safe %></td>
         <td><%= link_to 'Show', post %></td>
         <td><%= link_to 'Edit', edit_post_path(post) %></td>
-        <td><%= link_to 'New Category', new_category_path %></td>
         <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
