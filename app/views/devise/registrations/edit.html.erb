@@ -26,18 +26,14 @@
     <% end %>
   <% end %>
 
-
-
   <div class="img_form">
-
   <div>
     <%= image_tag("photo_form_white.svg", :alt => "Фото") %>
     <%= f.label "Добавьте изображение" %>
     <%= link_to(image_tag(@user.image.thumb.url, alt: 'Image'), @user.image.url, target: '_blank') if @user.image? %>
     <br>
     <%= f.file_field :image %>
-  </div>
-
+  </div>s
   </div>
 
   <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>

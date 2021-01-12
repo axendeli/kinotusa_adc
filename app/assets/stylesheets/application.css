@@ -80,6 +80,7 @@ header a {
 .logo {
   padding-left: 5%;
   display: flex;
+  align-self: center;
 }
 .log_in_Log_out {
   align-content: space-between;
@@ -221,7 +222,9 @@ footer {
 .top_menu a {
   margin: 0 20px;
 }
-
+.service_name_bottom {
+  display: none;
+}
 
 @media (min-width:300px) and (max-width:375px) {
   header {
@@ -271,6 +274,9 @@ footer {
   .service_name {
     margin-top: 10%;
   }
+  .footer {
+    justify-content: space-around;
+  }
   .footer_top {
     flex-direction: column;
   }
@@ -279,5 +285,9 @@ footer {
   }
   .footer_text a.footer_link {
     padding-top: 4%;
+  }
+  .service_name_bottom {
+    display: flex;
+    align-self: center;
   }
 }

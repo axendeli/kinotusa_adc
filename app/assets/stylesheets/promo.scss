@@ -10,7 +10,7 @@ h1 {
   font-size: 130px;
   text-align: center;
   margin: 0;
-    font-weight: 300;
+  font-weight: 300;
 }
 h2 {
   padding-left: 10%;
@@ -133,6 +133,9 @@ button.btn_primary.mobile {
     text-transform: uppercase;
   }
 }
+.get_emotions img {
+  width: 100%;
+}
 p.merch_description {
   text-align: center;
   display: flex;
@@ -167,7 +170,7 @@ p.merch_description {
 }
 .friends_logos {
   display: flex;
-  width: 80%;
+  width: 90%;
   justify-content: space-around;
   align-items: center;
   margin: 8% auto;
