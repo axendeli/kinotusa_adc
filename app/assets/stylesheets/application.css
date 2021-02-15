@@ -31,12 +31,9 @@ body {
   overflow-x: hidden;
 }
 a {
-  color: white;
   text-decoration: none;
 }
-a:visited {
-  color: white;
-}
+
 header {
   position: fixed;
   height: 4vw;
