@@ -1,4 +1,5 @@
 <h2>Присоединяйся к КИНОЧЕСТВУ</h2>
+<%= react_component 'M_btn'%>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>
@@ -33,8 +34,8 @@
     <%= f.label :password_confirmation %><br />
     <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
   </div>
-
   <div class="actions">
+
     <%= f.submit "Sign up" %>
   </div>
 <% end %>

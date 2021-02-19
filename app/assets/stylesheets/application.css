@@ -117,6 +117,14 @@ header button.btn_primary {
   width: fit-content;
 }
 
+/* -----------------BUTTONS---------------------- */
+
+.M_btn_primary {
+  padding: 6px 10px;
+  color: white;
+  background-color: var(--black);
+}
+
 
 /* -----------------BURGER MENU---------------------- */
 

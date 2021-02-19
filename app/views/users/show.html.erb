@@ -18,7 +18,7 @@
       <% elsif user_signed_in? %>
           <h5><%= button_to "Follow", follow_user_path, method: "POST"  %></h5>
       <% else %>
-      <%# можно добавить кнопку для регистрации или что-нибудь ещё  %>
+      <%#  %>
       <% end%>
       <div class="follow">
         <span>Подписчики: <%= link_to @user.followers.count %></span>
