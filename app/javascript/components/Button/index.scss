@@ -1,0 +1,81 @@
+@import '../../scss/variables';
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+  min-height: 40px;
+  padding: 10px 25px;
+  border-radius: 120px;
+  border: 1px solid transparent;
+
+  svg {
+    margin-right: 5px;
+    path {
+      stroke: $button-text;
+    }
+  }
+
+  &:hover {
+    background: $button-hover-bg;
+  }
+
+  &.small {
+    width: 100px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  &.normal {
+    width: auto;
+  }
+
+  &.large {
+    width: 100%;
+  }
+
+  &.secondary {
+    border: 1px solid $black1;
+    color: $black1;
+    background: $white;
+
+    svg {
+      margin-right: 5px;
+      path {
+        stroke: $black1;
+      }
+    }
+
+    &:hover {
+      background: $button-bg;
+      color: $button-text;
+
+      svg {
+        path {
+          stroke: $button-text;
+        }
+      }
+    }
+  }
+
+  &.text {
+    background-color: transparent;
+    color: $black1;
+    &:hover {
+      background-color: $gray3;
+    }
+  }
+
+  &.disabled {
+    background-color: $gray1;
+    color: $gray2;
+    cursor: default;
+    border: 1px solid transparent;
+    &:hover {
+      background-color: $gray1;
+      color: $gray2;
+    }
+  }
+}

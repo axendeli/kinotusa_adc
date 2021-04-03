@@ -1,0 +1,12 @@
+@import '../../scss/variables';
+
+.formItem {
+  margin-top: 20px;
+  width: 100%;
+  &:first-child {
+    margin-top: 0;
+  }
+  .input {
+    width: 100%;
+  }
+}

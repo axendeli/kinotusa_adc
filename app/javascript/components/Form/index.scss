@@ -1,0 +1,30 @@
+@import '../../scss/variables';
+.example {
+  background: $white;
+  padding: 40px;
+  width: 1000px;
+  text-align: center;
+  &__title {
+    margin-bottom: 15px;
+    h3 {
+      font-size: 20px;
+      line-height: 120%;
+    }
+  }
+  &__actions {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  &__components {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    width: 33%;
+  }
+  &__selects {
+    margin: 0 30px;
+  }
+}

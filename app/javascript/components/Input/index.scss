@@ -1,0 +1,56 @@
+@import '../../scss/variables';
+
+.input {
+  position: relative;
+  input {
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 14px;
+    border: 1px solid $input-bg;
+    border-radius: 8px;
+    transition: all .3s ease-in-out;
+    color: $input-text;
+    background: $input-bg;
+    &::placeholder {
+      color: $input-placeholder;
+    }
+    &:focus {
+      border-color: $input-active-border;
+      outline: none;
+    }
+  }
+
+  &:hover {
+    input {
+      background: $input-hover-bg;
+    }
+  }
+
+  &.active {
+    input {
+      border-color: $input-active-border;
+      outline: none
+    }
+    &:hover {
+      input {
+        background: $input-bg;
+      }
+    }
+  }
+
+  &.disabled {
+    input {
+      color: $gray1;
+      cursor: default;
+      &:focus {
+        border-color: $input-bg;
+        outline: none;
+      }
+    }
+    &:hover {
+      input {
+        background: $input-bg;
+      }
+    }
+  }
+}
